@@ -1,0 +1,36 @@
+{
+ "source": "bacinger/f1-circuits (MIT, github.com/bacinger/f1-circuits)",
+ "note": "Geometrie reali semplificate (RDP 2 m), normalizzate in viewBox 0 0 1000 600. Senso di marcia verificato via OSM oneway + Wikipedia/StatsF1. Start/finish da nodo OSM dove mappato, altrimenti indice 0 del dataset.",
+ "race_winding": {
+  "bahrain": "CW",
+  "jeddah": "CCW",
+  "melbourne": "CW",
+  "suzuka": "CW",
+  "shanghai": "CW",
+  "miami": "CCW",
+  "imola": "CCW",
+  "monaco": "CW",
+  "barcelona": "CW",
+  "montreal": "CW",
+  "spielberg": "CW",
+  "silverstone": "CW",
+  "spa": "CW",
+  "budapest": "CW",
+  "zandvoort": "CW",
+  "monza": "CW",
+  "baku": "CCW",
+  "singapore": "CCW",
+  "austin": "CCW",
+  "mexico": "CW",
+  "saopaulo": "CCW",
+  "vegas": "CCW",
+  "qatar": "CW",
+  "abudhabi": "CCW"
+ },
+ "start_override_lonlat": {
+  "monaco": [
+   7.42719,
+   43.73785
+  ]
+ }
+}

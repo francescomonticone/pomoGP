@@ -1,0 +1,5 @@
+.DS_Store
+tools/__pycache__/
+tools/radio_pages/
+tools/radio_clips/
+*.log

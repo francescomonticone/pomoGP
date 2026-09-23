@@ -1,0 +1,94 @@
+{
+ "monaco": {
+  "oneway_same": 408,
+  "oneway_opp": 161,
+  "verdict": "SAME",
+  "n_ways": 570,
+  "start_nodes": [
+   {
+    "lat": 43.7350269,
+    "lon": 7.4212652,
+    "tags": {
+     "addr:country": "MC",
+     "name": "Depart Grand Prix de Monaco",
+     "name:de": "Monaco Grand Prix Start- und Ziellinie",
+     "name:en": "Monaco Grand Prix Start/Finish Line",
+     "name:fr": "Depart Grand Prix de Monaco",
+     "name:pt": "Linha de Largada e de Chegada do Grande Pr\u00e9mio do M\u00f3naco",
+     "name:ru": "\u0421\u0442\u0430\u0440\u0442/\u0444\u0438\u043d\u0438\u0448 \u0413\u0440\u0430\u043d-\u043f\u0440\u0438 \u041c\u043e\u043d\u0430\u043a\u043e",
+     "raceway": "start-finish",
+     "tourism": "attraction",
+     "wheelchair": "yes"
+    }
+   }
+  ]
+ },
+ "baku": {
+  "oneway_same": 125,
+  "oneway_opp": 120,
+  "verdict": "SAME",
+  "n_ways": 452,
+  "start_nodes": []
+ },
+ "singapore": {
+  "oneway_same": 199,
+  "oneway_opp": 204,
+  "verdict": "OPP",
+  "n_ways": 2478,
+  "start_nodes": []
+ },
+ "jeddah": {
+  "oneway_same": 307,
+  "oneway_opp": 1,
+  "verdict": "SAME",
+  "n_ways": 95,
+  "start_nodes": []
+ },
+ "miami": {
+  "oneway_same": 235,
+  "oneway_opp": 21,
+  "verdict": "SAME",
+  "n_ways": 233,
+  "start_nodes": []
+ },
+ "vegas": {
+  "error": "overpass fail: HTTP Error 504: Gateway Timeout"
+ },
+ "melbourne": {
+  "oneway_same": 12,
+  "oneway_opp": 13,
+  "verdict": "OPP",
+  "n_ways": 487,
+  "start_nodes": [
+   {
+    "lat": -37.8500562,
+    "lon": 144.9689843,
+    "tags": {
+     "raceway": "start-finish"
+    }
+   }
+  ]
+ },
+ "montreal": {
+  "oneway_same": 460,
+  "oneway_opp": 2,
+  "verdict": "SAME",
+  "n_ways": 159,
+  "start_nodes": []
+ },
+ "austin": {
+  "oneway_same": 585,
+  "oneway_opp": 2,
+  "verdict": "SAME",
+  "n_ways": 49,
+  "start_nodes": [
+   {
+    "lat": 30.131893,
+    "lon": -97.6398291,
+    "tags": {
+     "raceway": "start-finish"
+    }
+   }
+  ]
+ }
+}

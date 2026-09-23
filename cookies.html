@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Policy · PomoGP</title>
+  <link rel="stylesheet" href="./css/styles.css?v=6" />
+  <style>
+    .legal { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+    .legal h1 { font-family: var(--font-ferrari); font-size: 28px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 4px; }
+    .legal .updated { color: var(--dim); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    .legal h2 { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; margin: 28px 0 8px; color: var(--f1-red); }
+    .legal p, .legal li { font-size: 13px; line-height: 1.8; color: #d8d8de; }
+    .legal table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 8px; }
+    .legal th, .legal td { border: 1px solid var(--graphite-2); padding: 8px 10px; text-align: left; }
+    .legal th { text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: var(--dim); }
+    .legal a { color: #fff; }
+    .back-link { display: inline-block; margin-top: 32px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--dim); text-decoration: none; }
+    .back-link:hover { color: var(--f1-red); }
+  </style>
+</head>
+<body>
+  <main class="legal">
+    <p class="updated">PomoGP · Legal</p>
+    <h1>Cookie Policy</h1>
+    <p class="updated">Last updated: September 2026</p>
+
+    <h2>1. Short version</h2>
+    <p>PomoGP sets <strong>zero cookies</strong> — no first-party, no third-party, no analytics,
+      no advertising. That is why there is no cookie banner on this site: there is nothing
+      to consent to.</p>
+
+    <h2>2. What we store instead: localStorage (on your device only)</h2>
+    <p>To remember your setup between visits, the app uses the browser's
+      <code>localStorage</code>, which — unlike cookies — is never sent over the network.
+      Under the ePrivacy rules this counts as strictly necessary storage for a service you
+      explicitly requested, so no consent is required.</p>
+    <table>
+      <tr><th>Key</th><th>Content</th><th>Purpose</th><th>Expiry</th></tr>
+      <tr><td><code>pomogp:v2</code></td>
+        <td>Driver, team, compound, timer durations, laps, circuit, audio/notification flags</td>
+        <td>Restore your setup on next visit</td>
+        <td>Until you clear site data (no automatic expiry)</td></tr>
+    </table>
+
+    <h2>3. Third-party storage</h2>
+    <p>Google Fonts (used as a typeface fallback) does not set cookies or use local storage
+      in the browser. No other third party is involved.</p>
+
+    <h2>4. How to erase it</h2>
+    <p>Clear your browser's site data for this domain, or run
+      <code>localStorage.removeItem('pomogp:v2')</code> in the developer console.
+      The setup wizard will appear again on your next visit.</p>
+
+    <a class="back-link" href="./index.html">← Back to PomoGP</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,922 @@
+{
+ "norris": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Race/LANNOR01_4_20251207_175455.mp3",
+  "clip": "2025__Abu_Dhabi_Grand_Prix__Race__LANNOR01_4_20251207_175455",
+  "snippet": "and Lando doing a great job compared to the clerk he might pit soon and go on a two in which case we'd cover in the next lap",
+  "duration": 10,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Practice%202/NOR_1_20260612_174620.mp3",
+   "clip": "2026__Barcelona_Grand_Prix__Practice_2__NOR_1_20260612_174620",
+   "snippet": "I've made a mistake and not taken out any front wing so if you think this is terrible we should box the front wing",
+   "duration": 9
+  },
+  "finish": {
+   "file": "norris-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/NOR_1_20260614_164037.mp3",
+   "clip": "2026__Barcelona_Grand_Prix__Race__NOR_1_20260614_164037",
+   "snippet": "Ah, nice point 3. Point 3, bottom 8. Yeah, well done, Grace. See us back on the third guys. Please just keep it going. We need to catch them up! We need to catch them up!",
+   "duration": 14.1
+  },
+  "starts": [
+   {
+    "file": "norris-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Practice%202/NOR_1_20260612_174620.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Practice_2__NOR_1_20260612_174620",
+    "snippet": "I've made a mistake and not taken out any front wing so if you think this is terrible we should box the front wing",
+    "duration": 9
+   },
+   {
+    "file": "norris-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/NOR_1_20260607_150948.mp3",
+    "clip": "2026__Monaco_Grand_Prix__Race__NOR_1_20260607_150948",
+    "snippet": "But it's outside his grid box",
+    "duration": 6.6
+   },
+   {
+    "file": "norris-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Race/LANNOR01_4_20251130_195950.mp3",
+    "clip": "2025__Qatar_Grand_Prix__Race__LANNOR01_4_20251130_195950",
+    "snippet": "Sir Lando, we're seeing very hot cargo temperatures, 130 in the high speed, so we need to give up a little bit in high speed to help in the low speed.",
+    "duration": 10.5
+   }
+  ]
+ },
+ "perez": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Qualifying/SERPER01_11_20241123_001856.mp3",
+  "clip": "2024__Las_Vegas_Grand_Prix__Qualifying__SERPER01_11_20241123_001856",
+  "snippet": "Stroll coming through. Okay, into the pit lane.",
+  "duration": 9.5,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/SERPER01_11_20241201_102722.mp3",
+   "clip": "2024__Qatar_Grand_Prix__Race__SERPER01_11_20241201_102722",
+   "snippet": "Generally, I'm losing entry and then I'm just here at Apex.",
+   "duration": 9.7
+  },
+  "finish": {
+   "file": "perez-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Sprint/SERPER01_11_20241102_114026.mp3",
+   "clip": "2024__Sa_o_Paulo_Grand_Prix__Sprint__SERPER01_11_20241102_114026",
+   "snippet": "Well done Checo, good effort, your fastest lap on that last lap, so good pace in the race there. Yeah, let's get them back tomorrow and tonight. Car is good.",
+   "duration": 15.2
+  },
+  "starts": [
+   {
+    "file": "perez-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Race/SERPER01_11_20241124_002739.mp3",
+    "clip": "2024__Las_Vegas_Grand_Prix__Race__SERPER01_11_20241124_002739",
+    "snippet": "Checo, is this your pace? Is this where the tyre is at? Yeah, I picked up graining. Let's see if it needs up.",
+    "duration": 9.6
+   },
+   {
+    "file": "perez-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/SERPER01_11_20241201_092437.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__SERPER01_11_20241201_092437",
+    "snippet": "Display 5, position 6, minus 4. Display 5, position 6, minus 4.",
+    "duration": 7.8
+   },
+   {
+    "file": "perez-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/SERPER01_11_20241201_100858.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__SERPER01_11_20241201_100858",
+    "snippet": "Five is very dirty on the wing see if they can clean it up",
+    "duration": 7.4
+   }
+  ]
+ },
+ "leclerc": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Mexico%20City%20Grand%20Prix/Race/CHALEC01_16_20251026_154249.mp3",
+  "clip": "2025__Mexico_City_Grand_Prix__Race__CHALEC01_16_20251026_154249",
+  "snippet": "Charged that to none, cool down the car, well done. Yeah, good job, it was quite a tough one.",
+  "duration": 10.2,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Mexico%20City%20Grand%20Prix/Race/CHALEC01_16_20251026_154249.mp3",
+   "clip": "2025__Mexico_City_Grand_Prix__Race__CHALEC01_16_20251026_154249",
+   "snippet": "Charged that to none, cool down the car, well done. Yeah, good job, it was quite a tough one.",
+   "duration": 10.2
+  },
+  "finish": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/United%20States%20Grand%20Prix/Race/CHALEC01_16_20251019_154035.mp3",
+   "clip": "2025__United_States_Grand_Prix__Race__CHALEC01_16_20251019_154035",
+   "snippet": "And E3, well done, nice drive. Yeah, good job, good recovery this weekend. Yeah, it's good to be back on the podium and I think we worked really well this weekend, so... Good job. Don't worry, Charles, we'll win.",
+   "duration": 20.2
+  },
+  "starts": [
+   {
+    "file": "leclerc-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Italian%20Grand%20Prix/Race/CHALEC01_16_20250907_155126.mp3",
+    "clip": "2025__Italian_Grand_Prix__Race__CHALEC01_16_20250907_155126",
+    "snippet": "We can discuss it later.",
+    "duration": 9.6
+   },
+   {
+    "file": "leclerc-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Dutch%20Grand%20Prix/Race/CHALEC01_16_20250831_154744.mp3",
+    "clip": "2025__Dutch_Grand_Prix__Race__CHALEC01_16_20250831_154744",
+    "snippet": "Yeah, Trump said he doesn't, he doesn't want, he doesn't like the space, so he cannot complain.",
+    "duration": 9
+   },
+   {
+    "file": "leclerc-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Race/CHALEC01_16_20251130_194927.mp3",
+    "clip": "2025__Qatar_Grand_Prix__Race__CHALEC01_16_20251130_194927",
+    "snippet": "Check every lap line in the planetary. I'm sure he's out.",
+    "duration": 8.9
+   }
+  ]
+ },
+ "hamilton": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/HAM_44_20260628_153415.mp3",
+  "clip": "2026__Austrian_Grand_Prix__Race__HAM_44_20260628_153415",
+  "snippet": "Box, box, box. It's over too late. We can ride it.",
+  "duration": 8.9,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/HAM_44_20260614_163825.mp3",
+   "clip": "2026__Barcelona_Grand_Prix__Race__HAM_44_20260614_163825",
+   "snippet": "Let's go! For the Ferrari! For the Ferrari! Guys, thank you for those great pit stops as well. Sorry I have to talk and I'm so proud of you. Thank you.",
+   "duration": 13.6
+  },
+  "finish": {
+   "file": "hamilton-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/HAM_44_20260614_163825.mp3",
+   "clip": "2026__Barcelona_Grand_Prix__Race__HAM_44_20260614_163825",
+   "snippet": "Let's go! For the Ferrari! For the Ferrari! Guys, thank you for those great pit stops as well. Sorry I have to talk and I'm so proud of you. Thank you.",
+   "duration": 13.6
+  },
+  "starts": [
+   {
+    "file": "hamilton-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/HAM_44_20260614_163825.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__HAM_44_20260614_163825",
+    "snippet": "Let's go! For the Ferrari! For the Ferrari! Guys, thank you for those great pit stops as well. Sorry I have to talk and I'm so proud of you. Thank you.",
+    "duration": 13.6
+   },
+   {
+    "file": "hamilton-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/HAM_44_20260614_154710.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__HAM_44_20260614_154710",
+    "snippet": "Do you know what time they need to do? 20 .9. Charlie's in forward. You are a different strategy.",
+    "duration": 10.2
+   },
+   {
+    "file": "hamilton-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/HAM_44_20260614_162432.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__HAM_44_20260614_162432",
+    "snippet": "And bmig3 suggestion. I don't know where I am. I have set the repeat to 1.",
+    "duration": 9.7
+   }
+  ]
+ },
+ "verstappen": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/VER_3_20260524_152145.mp3",
+  "clip": "2026__Canadian_Grand_Prix__Race__VER_3_20260524_152145",
+  "snippet": "I think this is the switch. Copy that Max. Box, switch to select, confirm. Yep.",
+  "duration": 11.1,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Qualifying/MAXVER01_1_20251206_190128.mp3",
+   "clip": "2025__Abu_Dhabi_Grand_Prix__Qualifying__MAXVER01_1_20251206_190128",
+   "snippet": "That's two pole position laps, Max. It's a good start. Let's go, guys. Let's see. Yes. Lovely.",
+   "duration": 14.7
+  },
+  "finish": {
+   "file": "verstappen-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/VER_3_20260628_163139.mp3",
+   "clip": "2026__Austrian_Grand_Prix__Race__VER_3_20260628_163139",
+   "snippet": "Ah, good job Max, well done. Throwing the wheels off it, that's normal. Thanks for the help.",
+   "duration": 12.4
+  },
+  "starts": [
+   {
+    "file": "verstappen-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Qualifying/MAXVER01_1_20251206_190128.mp3",
+    "clip": "2025__Abu_Dhabi_Grand_Prix__Qualifying__MAXVER01_1_20251206_190128",
+    "snippet": "That's two pole position laps, Max. It's a good start. Let's go, guys. Let's see. Yes. Lovely.",
+    "duration": 14.7
+   },
+   {
+    "file": "verstappen-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/VER_3_20260614_151828.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__VER_3_20260614_151828",
+    "snippet": "Yeah, it's not like a lot to the bias the league on the street. It's not impressive",
+    "duration": 9.2
+   },
+   {
+    "file": "verstappen-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/VER_3_20260628_155813.mp3",
+    "clip": "2026__Austrian_Grand_Prix__Race__VER_3_20260628_155813",
+    "snippet": "So, yeah, best you can at this stage of the race, we'll just try to build a bit of a tyre offset. Hope he gets into trouble towards the end. I'll take it. Copy.",
+    "duration": 11
+   }
+  ]
+ },
+ "tsunoda": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Las%20Vegas%20Grand%20Prix/Practice%203/YUKTSU01_22_20251121_165021.mp3",
+  "clip": "2025__Las_Vegas_Grand_Prix__Practice_3__YUKTSU01_22_20251121_165021",
+  "snippet": "We're going to box this lap, we've got an issue with the car, so we're going to box this lap.",
+  "duration": 9.6,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Miami%20Grand%20Prix/Sprint/YUKTSU01_22_20250503_122446.mp3",
+   "clip": "2025__Miami_Grand_Prix__Sprint__YUKTSU01_22_20250503_122446",
+   "snippet": "Okay, so we have been informed that when we leave the fit lane the race will start so we will be taking the grid start",
+   "duration": 9.4
+  },
+  "finish": {
+   "file": "tsunoda-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Chinese%20Grand%20Prix/Race/YUKTSU01_22_20250323_151419.mp3",
+   "clip": "2025__Chinese_Grand_Prix__Race__YUKTSU01_22_20250323_151419",
+   "snippet": "I want to use my front. We don't want to. Well, I want to. Okay, do what you need to do.",
+   "duration": 11.2
+  },
+  "starts": [
+   {
+    "file": "tsunoda-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Miami%20Grand%20Prix/Sprint/YUKTSU01_22_20250503_122446.mp3",
+    "clip": "2025__Miami_Grand_Prix__Sprint__YUKTSU01_22_20250503_122446",
+    "snippet": "Okay, so we have been informed that when we leave the fit lane the race will start so we will be taking the grid start",
+    "duration": 9.4
+   },
+   {
+    "file": "tsunoda-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Chinese%20Grand%20Prix/Race/YUKTSU01_22_20250323_151419.mp3",
+    "clip": "2025__Chinese_Grand_Prix__Race__YUKTSU01_22_20250323_151419",
+    "snippet": "I want to use my front. We don't want to. Well, I want to. Okay, do what you need to do.",
+    "duration": 11.2
+   },
+   {
+    "file": "tsunoda-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Race/YUKTSU01_22_20251207_173426.mp3",
+    "clip": "2025__Abu_Dhabi_Grand_Prix__Race__YUKTSU01_22_20251207_173426",
+    "snippet": "Okay, we expect Norris to be near DRS within one lap. Oh, he can when he catches.",
+    "duration": 7.6
+   }
+  ]
+ },
+ "piastri": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Mexico%20City%20Grand%20Prix/Race/OSCPIA01_81_20251026_150658.mp3",
+  "clip": "2025__Mexico_City_Grand_Prix__Race__OSCPIA01_81_20251026_150658",
+  "snippet": "Oscar, we think there should be box to overtake, box to overtake Antonelli unless he will pass on the start finish next time.",
+  "duration": 8.9,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/United%20States%20Grand%20Prix/Race/OSCPIA01_81_20251019_145401.mp3",
+   "clip": "2025__United_States_Grand_Prix__Race__OSCPIA01_81_20251019_145401",
+   "snippet": "Let's go. Russell is within undercut range. Would you prefer to pick first onto a soft or let him go and have to pass on track? Probably go first.",
+   "duration": 12.9
+  },
+  "finish": {
+   "file": "piastri-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Race/OSCPIA01_81_20251109_144832.mp3",
+   "clip": "2025__Sa_o_Paulo_Grand_Prix__Race__OSCPIA01_81_20251109_144832",
+   "snippet": "Oscar, how's the grip overall? Any evidence the hard may be better than P1? Didn't look too bad on Aston Martin. It's difficult to know, but the medium feels good for now.",
+   "duration": 11.7
+  },
+  "starts": [
+   {
+    "file": "piastri-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/United%20States%20Grand%20Prix/Race/OSCPIA01_81_20251019_145401.mp3",
+    "clip": "2025__United_States_Grand_Prix__Race__OSCPIA01_81_20251019_145401",
+    "snippet": "Let's go. Russell is within undercut range. Would you prefer to pick first onto a soft or let him go and have to pass on track? Probably go first.",
+    "duration": 12.9
+   },
+   {
+    "file": "piastri-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Qualifying/OSCPIA01_81_20251129_221601.mp3",
+    "clip": "2025__Qatar_Grand_Prix__Qualifying__OSCPIA01_81_20251129_221601",
+    "snippet": "I think that is probably the most fun I've had driving an F1 car, so thank you, great car, great track. Let's go!",
+    "duration": 12.7
+   },
+   {
+    "file": "piastri-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Sprint/OSCPIA01_81_20251108_103431.mp3",
+    "clip": "2025__Sa_o_Paulo_Grand_Prix__Sprint__OSCPIA01_81_20251108_103431",
+    "snippet": "The worst place is the grid and out of turn 12, like it's gonna be slicky, but the rest is slicks.",
+    "duration": 14.5
+   }
+  ]
+ },
+ "russell": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/RUS_63_20260607_162906.mp3",
+  "clip": "2026__Monaco_Grand_Prix__Race__RUS_63_20260607_162906",
+  "snippet": "And have I served my penalty or not? I spent about 10 seconds in the pit lane. Not listening to Hajar. Watch, let's talk about it after. Yeah, I just need to know. If I'm in a 5 second penalty and I'm still behind Hajar on hard times... George, I'll give you the messages as the messages come through, okay? Yeah, alright, thanks.",
+  "duration": 20.5,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/RUS_63_20260523_160721.mp3",
+   "clip": "2026__Canadian_Grand_Prix__Race__RUS_63_20260523_160721",
+   "snippet": "I don't know why the ride has felt quite a bit worse today than yesterday.",
+   "duration": 10.1
+  },
+  "finish": {
+   "file": "russell-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/RUS_63_20260628_163044.mp3",
+   "clip": "2026__Austrian_Grand_Prix__Race__RUS_63_20260628_163044",
+   "snippet": "Good job, mate. Woo! That was two years ago. Yabba -dabba -doo! Yabba -dabba -doo. Well, well done, guys. I'm happy. Well done. Thank you so, so. Good team result. Well done. Well done, everybody.",
+   "duration": 18.5
+  },
+  "starts": [
+   {
+    "file": "russell-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/RUS_63_20260523_160721.mp3",
+    "clip": "2026__Canadian_Grand_Prix__Race__RUS_63_20260523_160721",
+    "snippet": "I don't know why the ride has felt quite a bit worse today than yesterday.",
+    "duration": 10.1
+   },
+   {
+    "file": "russell-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/RUS_63_20260614_154302.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__RUS_63_20260614_154302",
+    "snippet": "To update, Lewis will be on a 3. We are still racing at Norris so we need to keep these lap times going.",
+    "duration": 9.8
+   },
+   {
+    "file": "russell-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/RUS_63_20260607_152339.mp3",
+    "clip": "2026__Monaco_Grand_Prix__Race__RUS_63_20260607_152339",
+    "snippet": "How do I hide the front left grain and he won't be out for much longer I don't think. Just make sure you've got good tyres when he does get out of the way.",
+    "duration": 10.2
+   }
+  ]
+ },
+ "antonelli": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Practice%203/ANT_12_20260613_132300.mp3",
+  "clip": "2026__Barcelona_Grand_Prix__Practice_3__ANT_12_20260613_132300",
+  "snippet": "Oh my god, mate. Unbelievable. It's unbelievable. I'm gonna box. Okay, copy that, mate.",
+  "duration": 9.3,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/ANT_12_20260628_160408.mp3",
+   "clip": "2026__Austrian_Grand_Prix__Race__ANT_12_20260628_160408",
+   "snippet": "Okay, come here, let's go. Just maintain the focus.",
+   "duration": 6.6
+  },
+  "finish": {
+   "file": "antonelli-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/ANT_12_20260524_173905.mp3",
+   "clip": "2026__Canadian_Grand_Prix__Race__ANT_12_20260524_173905",
+   "snippet": "Nice work, Kimi. It's been a very eventful day, but well done. Yeah, thank you, everyone. Not the way I wanted to win. It was going to be a good fight with George, but yeah, we'll take it.",
+   "duration": 16.1
+  },
+  "starts": [
+   {
+    "file": "antonelli-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Austrian%20Grand%20Prix/Race/ANT_12_20260628_160408.mp3",
+    "clip": "2026__Austrian_Grand_Prix__Race__ANT_12_20260628_160408",
+    "snippet": "Okay, come here, let's go. Just maintain the focus.",
+    "duration": 6.6
+   },
+   {
+    "file": "antonelli-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Belgian%20Grand%20Prix/Race/ANT_12_20260719_162911.mp3",
+    "clip": "2026__Belgian_Grand_Prix__Race__ANT_12_20260719_162911",
+    "snippet": "Nice work, Kimi. Well done there, mate. Let's go! Good effort, mate. Let's go. Thank you so much, guys. Yeah, well done, mate. Thank you. Yeah, it was a busy race, that one. But well done. Cool head.",
+    "duration": 0
+   },
+   {
+    "file": "antonelli-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Barcelona%20Grand%20Prix/Race/ANT_12_20260614_155042.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__ANT_12_20260614_155042",
+    "snippet": "Thank you, it won't be long for George. We are at risk for Norris behind in 3 .9 seconds.",
+    "duration": 10
+   }
+  ]
+ },
+ "alonso": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Monaco%20Grand%20Prix/Race/FERALO01_14_20250525_152703.mp3",
+  "clip": "2025__Monaco_Grand_Prix__Race__FERALO01_14_20250525_152703",
+  "snippet": "Push now, Fernando. I know I haven't given you much info, but just keep pushing now. I'm going to cover Hamilton. I can't push now!",
+  "duration": 9.4,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Canadian%20Grand%20Prix/Race/FERALO01_14_20250615_144237.mp3",
+   "clip": "2025__Canadian_Grand_Prix__Race__FERALO01_14_20250615_144237",
+   "snippet": "be gentle entry three and eight gentle entry three and eight we are racing not testing",
+   "duration": 9.9
+  },
+  "finish": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Qualifying/FERALO01_14_20251206_191414.mp3",
+   "clip": "2025__Abu_Dhabi_Grand_Prix__Qualifying__FERALO01_14_20251206_191414",
+   "snippet": "Oh, it's a happy day. Tomorrow even more. Yeah, it's a good day. You beat your mate Bortoletto by two thousandths, by the way, isn't it? One thousand too many.",
+   "duration": 14.1
+  },
+  "starts": [
+   {
+    "file": "alonso-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Canadian%20Grand%20Prix/Race/FERALO01_14_20250615_144237.mp3",
+    "clip": "2025__Canadian_Grand_Prix__Race__FERALO01_14_20250615_144237",
+    "snippet": "be gentle entry three and eight gentle entry three and eight we are racing not testing",
+    "duration": 9.9
+   },
+   {
+    "file": "alonso-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Singapore%20Grand%20Prix/Race/FERALO01_14_20251005_205047.mp3",
+    "clip": "2025__Singapore_Grand_Prix__Race__FERALO01_14_20251005_205047",
+    "snippet": "34 to go if you speak to me every laugh I will disconnect already",
+    "duration": 9.4
+   },
+   {
+    "file": "alonso-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Dutch%20Grand%20Prix/Race/FERALO01_14_20250831_155252.mp3",
+    "clip": "2025__Dutch_Grand_Prix__Race__FERALO01_14_20250831_155252",
+    "snippet": "Lando, how is balance on the hardpipe? I don't know! You put me always in traffic, I don't know!",
+    "duration": 10.7
+   }
+  ]
+ },
+ "stroll": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Qualifying/LANSTR01_18_20241123_002122.mp3",
+  "clip": "2024__Las_Vegas_Grand_Prix__Qualifying__LANSTR01_18_20241123_002122",
+  "snippet": "Okay Lance, you're clear behind. Good lap given the situation and great job by everybody in the garage to get the car out.",
+  "duration": 8.2,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Practice%201/LANSTR01_18_20241121_203833.mp3",
+   "clip": "2024__Las_Vegas_Grand_Prix__Practice_1__LANSTR01_18_20241121_203833",
+   "snippet": "Can I just keep pushing?",
+   "duration": 5.5
+  },
+  "finish": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Mexico%20City%20Grand%20Prix/Race/LANSTR01_18_20241027_155433.mp3",
+   "clip": "2024__Mexico_City_Grand_Prix__Race__LANSTR01_18_20241027_155433",
+   "snippet": "Okay mate, good job, good job, that's the flag, so that is a P11, so I know we want more than that, that's a really good drive, that's a really good drive Very well managed",
+   "duration": 11.4
+  },
+  "starts": [
+   {
+    "file": "stroll-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Practice%201/LANSTR01_18_20241121_203833.mp3",
+    "clip": "2024__Las_Vegas_Grand_Prix__Practice_1__LANSTR01_18_20241121_203833",
+    "snippet": "Can I just keep pushing?",
+    "duration": 5.5
+   },
+   {
+    "file": "stroll-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Singapore%20Grand%20Prix/Race/LANSTR01_18_20240922_192927.mp3",
+    "clip": "2024__Singapore_Grand_Prix__Race__LANSTR01_18_20240922_192927",
+    "snippet": "Lance, are the brakes any better or still the same? No, still the same. Copy, OK, we are looking at it. Yeah, the brakes are pretty bad. Yeah, copy, we're going to try and work on the grid, we do see what you're saying.",
+    "duration": 17.5
+   },
+   {
+    "file": "stroll-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/United%20States%20Grand%20Prix/Race/LANSTR01_18_20241020_152110.mp3",
+    "clip": "2024__United_States_Grand_Prix__Race__LANSTR01_18_20241020_152110",
+    "snippet": "That's 11 laps to go you can see Bottas defending hard so you can have a bit of fun",
+    "duration": 9.9
+   }
+  ]
+ },
+ "gasly": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Belgian%20Grand%20Prix/Sprint/PIEGAS01_10_20250726_113354.mp3",
+  "clip": "2025__Belgian_Grand_Prix__Sprint__PIEGAS01_10_20250726_113354",
+  "snippet": "We need to box the car please, box the car now, box the car.",
+  "duration": 8.7,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Qualifying/PIEGAS01_10_20251129_214337.mp3",
+   "clip": "2025__Qatar_Grand_Prix__Qualifying__PIEGAS01_10_20251129_214337",
+   "snippet": "And we are safe and free, well done. Let's go! Not a Q3! Let's go! That's good, I'm very happy with that lap.",
+   "duration": 14
+  },
+  "finish": {
+   "file": "gasly-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Abu%20Dhabi%20Grand%20Prix/Qualifying/PIEGAS01_10_20241207_090923.mp3",
+   "clip": "2024__Abu_Dhabi_Grand_Prix__Qualifying__PIEGAS01_10_20241207_090923",
+   "snippet": "All right, well done. We should be happy with that. Yeah. That was very good. Still all to play for tomorrow. Yeah, yeah, yeah.",
+   "duration": 10.5
+  },
+  "starts": [
+   {
+    "file": "gasly-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Qualifying/PIEGAS01_10_20251129_214337.mp3",
+    "clip": "2025__Qatar_Grand_Prix__Qualifying__PIEGAS01_10_20251129_214337",
+    "snippet": "And we are safe and free, well done. Let's go! Not a Q3! Let's go! That's good, I'm very happy with that lap.",
+    "duration": 14
+   },
+   {
+    "file": "gasly-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Emilia%20Romagna%20Grand%20Prix/Qualifying/PIEGAS01_10_20250517_171941.mp3",
+    "clip": "2025__Emilia_Romagna_Grand_Prix__Qualifying__PIEGAS01_10_20250517_171941",
+    "snippet": "Let's go. That was a good lap. Let's go! That was a good lap. That's going to be a good time. Excellent. Same again.",
+    "duration": 14.5
+   },
+   {
+    "file": "gasly-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Japanese%20Grand%20Prix/Race/PIEGAS01_10_20250406_145443.mp3",
+    "clip": "2025__Japanese_Grand_Prix__Race__PIEGAS01_10_20250406_145443",
+    "snippet": "Okay, so we're going to swap places with Jack into turn one this time, please. So we'll swap places with Jack into turn one.",
+    "duration": 12
+   }
+  ]
+ },
+ "colapinto": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Abu%20Dhabi%20Grand%20Prix/Race/FRACOL01_43_20241208_170045.mp3",
+  "clip": "2024__Abu_Dhabi_Grand_Prix__Race__FRACOL01_43_20241208_170045",
+  "snippet": "Thank you guys. Thank you for listening races. You made my dream come true",
+  "duration": 9.1,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/FRACOL01_43_20241201_092855.mp3",
+   "clip": "2024__Qatar_Grand_Prix__Race__FRACOL01_43_20241201_092855",
+   "snippet": "Okay, when on the grid, go to P1, no P0, go P1.",
+   "duration": 6.6
+  },
+  "finish": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/COL_43_20260524_174314.mp3",
+   "clip": "2026__Canadian_Grand_Prix__Race__COL_43_20260524_174314",
+   "snippet": "Oh, vamos, buddy. He's six. Good job, mate. Mate. Sorry for the extra stress. I don't know. I'm really sorry. I'll check the heart rate. I'll check the heart rate after the race, mate. Mate, fantastic job this weekend. Really, really good driving.",
+   "duration": 22.3
+  },
+  "starts": [
+   {
+    "file": "colapinto-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/FRACOL01_43_20241201_092855.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__FRACOL01_43_20241201_092855",
+    "snippet": "Okay, when on the grid, go to P1, no P0, go P1.",
+    "duration": 6.6
+   },
+   {
+    "file": "colapinto-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Mexico%20City%20Grand%20Prix/Race/FRACOL01_43_20241027_141331.mp3",
+    "clip": "2024__Mexico_City_Grand_Prix__Race__FRACOL01_43_20241027_141331",
+    "snippet": "We can just stay with Perez. You can match his pace and just go with him. And for info, he's under investigation for a false start as well. Well, yeah, he had a really good start. I also had a s*** one, so...",
+    "duration": 14.5
+   },
+   {
+    "file": "colapinto-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Mexico%20City%20Grand%20Prix/Race/FRACOL01_43_20241027_142834.mp3",
+    "clip": "2024__Mexico_City_Grand_Prix__Race__FRACOL01_43_20241027_142834",
+    "snippet": "Sorry go ahead. Can you have a look at the wind turning? Yeah, he's having a look So this time we won't do a start just drive straight through",
+    "duration": 11
+   }
+  ]
+ },
+ "albon": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Emilia%20Romagna%20Grand%20Prix/Race/ALEALB01_23_20250518_153949.mp3",
+  "clip": "2025__Emilia_Romagna_Grand_Prix__Race__ALEALB01_23_20250518_153949",
+  "snippet": "Guys, come on, let's not be stupid. You're doing a great job, you are pulling away from Hazard and Anil on site.",
+  "duration": 9.3,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Abu%20Dhabi%20Grand%20Prix/Practice%202/ALEALB01_23_20241206_070559.mp3",
+   "clip": "2024__Abu_Dhabi_Grand_Prix__Practice_2__ALEALB01_23_20241206_070559",
+   "snippet": "I'm just mainly mid -corner. I think a bit of that was just the front not being ready at the start of the lap.",
+   "duration": 11.4
+  },
+  "finish": {
+   "file": "albon-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Saudi%20Arabian%20Grand%20Prix/Practice%202/ALEALB01_23_20250418_203939.mp3",
+   "clip": "2025__Saudi_Arabian_Grand_Prix__Practice_2__ALEALB01_23_20250418_203939",
+   "snippet": "Think I just skim the wool",
+   "duration": 4.4
+  },
+  "starts": [
+   {
+    "file": "albon-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Abu%20Dhabi%20Grand%20Prix/Practice%202/ALEALB01_23_20241206_070559.mp3",
+    "clip": "2024__Abu_Dhabi_Grand_Prix__Practice_2__ALEALB01_23_20241206_070559",
+    "snippet": "I'm just mainly mid -corner. I think a bit of that was just the front not being ready at the start of the lap.",
+    "duration": 11.4
+   },
+   {
+    "file": "albon-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Singapore%20Grand%20Prix/Practice%201/ALEALB01_23_20251003_173730.mp3",
+    "clip": "2025__Singapore_Grand_Prix__Practice_1__ALEALB01_23_20251003_173730",
+    "snippet": "fire green default one five when you can green default one five single okay boxes that",
+    "duration": 9.4
+   },
+   {
+    "file": "albon-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Canadian%20Grand%20Prix/Race/ALEALB01_23_20250615_142851.mp3",
+    "clip": "2025__Canadian_Grand_Prix__Race__ALEALB01_23_20250615_142851",
+    "snippet": "I don't really know why you don't listen to me, but I'm really going to listen now.",
+    "duration": 8.4
+   }
+  ]
+ },
+ "sainz": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/United%20States%20Grand%20Prix/Practice%201/CARSAI01_55_20251017_125939.mp3",
+  "clip": "2025__United_States_Grand_Prix__Practice_1__CARSAI01_55_20251017_125939",
+  "snippet": "Box, box, box, do not push, do not push, box, box Okay, I'm looking at a potential issue with the gearbox, I'll let you know",
+  "duration": 11.7,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Race/CARSAI01_55_20251130_201305.mp3",
+   "clip": "2025__Qatar_Grand_Prix__Race__CARSAI01_55_20251130_201305",
+   "snippet": "Yeah, guys I think we need to go for it. Push flat out till we finish. Try to get this.",
+   "duration": 9.7
+  },
+  "finish": {
+   "file": "sainz-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Azerbaijan%20Grand%20Prix/Qualifying/CARSAI01_55_20250920_175952.mp3",
+   "clip": "2025__Azerbaijan_Grand_Prix__Qualifying__CARSAI01_55_20250920_175952",
+   "snippet": "You did really good, really good, Peter. Amazing job, amazing job. Difficult session. Thank you, guys. Ramos, Carlos, well done. It's a brilliant, brilliant qualifying session. Wow, that was tough. Well done. Thank you, guys. Amazing. Thank you.",
+   "duration": 15.2
+  },
+  "starts": [
+   {
+    "file": "sainz-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Race/CARSAI01_55_20251130_201305.mp3",
+    "clip": "2025__Qatar_Grand_Prix__Race__CARSAI01_55_20251130_201305",
+    "snippet": "Yeah, guys I think we need to go for it. Push flat out till we finish. Try to get this.",
+    "duration": 9.7
+   },
+   {
+    "file": "sainz-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/SAI_55_20260607_154059.mp3",
+    "clip": "2026__Monaco_Grand_Prix__Race__SAI_55_20260607_154059",
+    "snippet": "What do you think about Plan B? Err, repeat what was Plan B, now I forgot it. Take IA, heading out at the stop.",
+    "duration": 9.5
+   },
+   {
+    "file": "sainz-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Azerbaijan%20Grand%20Prix/Race/CARSAI01_55_20250921_162020.mp3",
+    "clip": "2025__Azerbaijan_Grand_Prix__Race__CARSAI01_55_20250921_162020",
+    "snippet": "Russell, on pressure rubber with car pace, it would be difficult. Copy, give it to me please.",
+    "duration": 9.4
+   }
+  ]
+ },
+ "lawson": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Monaco%20Grand%20Prix/Race/LIALAW01_30_20250525_160126.mp3",
+  "clip": "2025__Monaco_Grand_Prix__Race__LIALAW01_30_20250525_160126",
+  "snippet": "Car behind is now signed. Why are they doing that? To give themselves a pit stop.",
+  "duration": 9.8,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Monaco%20Grand%20Prix/Race/LIALAW01_30_20250525_160126.mp3",
+   "clip": "2025__Monaco_Grand_Prix__Race__LIALAW01_30_20250525_160126",
+   "snippet": "Car behind is now signed. Why are they doing that? To give themselves a pit stop.",
+   "duration": 9.8
+  },
+  "finish": {
+   "file": "lawson-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/LAW_30_20260607_142803.mp3",
+   "clip": "2026__Monaco_Grand_Prix__Race__LAW_30_20260607_142803",
+   "snippet": "Well done everybody. You're doing a good job. You've done my best. Today doesn't make it worth it. Thank you Liam.",
+   "duration": 11.5
+  },
+  "starts": [
+   {
+    "file": "lawson-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Canadian%20Grand%20Prix/Race/LIALAW01_30_20250615_151510.mp3",
+    "clip": "2025__Canadian_Grand_Prix__Race__LIALAW01_30_20250615_151510",
+    "snippet": "Sorry man, it's a hard day and this is the cherry on top, but we had to take care of this peel",
+    "duration": 10.8
+   },
+   {
+    "file": "lawson-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Monaco%20Grand%20Prix/Race/LAW_30_20260607_142803.mp3",
+    "clip": "2026__Monaco_Grand_Prix__Race__LAW_30_20260607_142803",
+    "snippet": "Well done everybody. You're doing a good job. You've done my best. Today doesn't make it worth it. Thank you Liam.",
+    "duration": 11.5
+   },
+   {
+    "file": "lawson-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Miami%20Grand%20Prix/Race/LIALAW01_30_20250504_160824.mp3",
+    "clip": "2025__Miami_Grand_Prix__Race__LIALAW01_30_20250504_160824",
+    "snippet": "Yeah, I got completely hit mate. I have no idea what the other thing was doing.",
+    "duration": 7.8
+   }
+  ]
+ },
+ "hadjar": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Abu%20Dhabi%20Grand%20Prix/Qualifying/ISAHAD01_6_20251206_184235.mp3",
+  "clip": "2025__Abu_Dhabi_Grand_Prix__Qualifying__ISAHAD01_6_20251206_184235",
+  "snippet": "That was a good lap Isaac, congrats. That's all I have! And that was the right time to put it together, thank you. You are safe. Yes! Negative. Yes!",
+  "duration": 15,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Mexico%20City%20Grand%20Prix/Race/ISAHAD01_6_20251026_132210.mp3",
+   "clip": "2025__Mexico_City_Grand_Prix__Race__ISAHAD01_6_20251026_132210",
+   "snippet": "Yeah, I need to change helmets. Too much air coming into visor. Okay, we'll do that on the grid, no problem.",
+   "duration": 10.9
+  },
+  "finish": {
+   "file": "hadjar-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Monaco%20Grand%20Prix/Practice%201/ISAHAD01_6_20250523_143159.mp3",
+   "clip": "2025__Monaco_Grand_Prix__Practice_1__ISAHAD01_6_20250523_143159",
+   "snippet": "That was the busiest FP1 of my life.",
+   "duration": 6.1
+  },
+  "starts": [
+   {
+    "file": "hadjar-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/HAD_6_20260524_121726.mp3",
+    "clip": "2026__Canadian_Grand_Prix__Race__HAD_6_20260524_121726",
+    "snippet": "You think it's worth it already to go to the shop? How do you feel the tire? They are still alive, so maybe wait a little bit. And for the moment they're okay. The only thing can be rear overheating a little bit.",
+    "duration": 18.2
+   },
+   {
+    "file": "hadjar-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Mexico%20City%20Grand%20Prix/Race/ISAHAD01_6_20251026_132210.mp3",
+    "clip": "2025__Mexico_City_Grand_Prix__Race__ISAHAD01_6_20251026_132210",
+    "snippet": "Yeah, I need to change helmets. Too much air coming into visor. Okay, we'll do that on the grid, no problem.",
+    "duration": 10.9
+   },
+   {
+    "file": "hadjar-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Azerbaijan%20Grand%20Prix/Race/ISAHAD01_6_20250921_142723.mp3",
+    "clip": "2025__Azerbaijan_Grand_Prix__Race__ISAHAD01_6_20250921_142723",
+    "snippet": "Yeah, still no power. Okay, bring it to the grid slowly, please.",
+    "duration": 8.1
+   }
+  ]
+ },
+ "hulkenberg": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Race/NICHUL01_27_20250629_170515.mp3",
+  "clip": "2025__Austrian_Grand_Prix__Race__NICHUL01_27_20250629_170515",
+  "snippet": "Oh yeah boy! Yes, yes! Double points baby, double points! Let's go Sabre! Woo! There you go, it's Jonathan. It was great to see that look in your eye on the grid again today. Fantastic job, well done. Thanks Jonathan. I actually faked that look, but it's good to know it's working on you.",
+  "duration": 30.2,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/NICHUL01_27_20241201_092955.mp3",
+   "clip": "2024__Qatar_Grand_Prix__Race__NICHUL01_27_20241201_092955",
+   "snippet": "Okay, Nico, press in button, cool the car to the grid, test your drink, static bite point, learn when you arrive on the grid, and then P0 after you switch off. See you there.",
+   "duration": 15.1
+  },
+  "finish": {
+   "file": "hulkenberg-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Race/NICHUL01_27_20250629_170515.mp3",
+   "clip": "2025__Austrian_Grand_Prix__Race__NICHUL01_27_20250629_170515",
+   "snippet": "Oh yeah boy! Yes, yes! Double points baby, double points! Let's go Sabre! Woo! There you go, it's Jonathan. It was great to see that look in your eye on the grid again today. Fantastic job, well done. Thanks Jonathan. I actually faked that look, but it's good to know it's working on you.",
+   "duration": 30.2
+  },
+  "starts": [
+   {
+    "file": "hulkenberg-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Sprint/NICHUL01_27_20241130_073137.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Sprint__NICHUL01_27_20241130_073137",
+    "snippet": "Straight to the grid right? That's correct.",
+    "duration": 4.9
+   },
+   {
+    "file": "hulkenberg-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/NICHUL01_27_20241201_092955.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__NICHUL01_27_20241201_092955",
+    "snippet": "Okay, Nico, press in button, cool the car to the grid, test your drink, static bite point, learn when you arrive on the grid, and then P0 after you switch off. See you there.",
+    "duration": 15.1
+   },
+   {
+    "file": "hulkenberg-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/NICHUL01_27_20241201_102911.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__NICHUL01_27_20241201_102911",
+    "snippet": "Nico, the pack ahead is starting to slow. Sonoda, Bottas, they're doing 28s. You are catching them, but you were over the limit in high speed that lap.",
+    "duration": 9.5
+   }
+  ]
+ },
+ "bortoleto": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Canadian%20Grand%20Prix/Race/BOR_5_20260524_112124.mp3",
+  "clip": "2026__Canadian_Grand_Prix__Race__BOR_5_20260524_112124",
+  "snippet": "Yep. What a drive. Good job. Excellent. So good. Set the pressure up. Really good pace. Well done. Thank you.",
+  "duration": 17.4,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Qualifying/GABBOR01_5_20250628_165618.mp3",
+   "clip": "2025__Austrian_Grand_Prix__Qualifying__GABBOR01_5_20250628_165618",
+   "snippet": "Well, then you have made it to your first Q3. Let's go. I hope first of many. Let's go guys. Good job",
+   "duration": 13.8
+  },
+  "finish": {
+   "file": "bortoleto-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2026/Belgian%20Grand%20Prix/Race/BOR_5_20260719_163412.mp3",
+   "clip": "2026__Belgian_Grand_Prix__Race__BOR_5_20260719_163412",
+   "snippet": "Come on, that's P8, P8, more than, more than, charge up, more than, and we drive into P1, into turn 1, what a race you have driven, Gabi, what a race, unbelievable, second assist, yes, yes, yes, coming to the pit, drive it slowly, come on, what a race, amazing driving, mega job, mega job, mega quality, thank you very much. Again, fantastic job, really well deserved, you did a fantastic, to put out a fight, unbelievable fight out there, and great job for the team on the pit stop, double stack getting you and Nico in a good time for double points. Yes, thanks everyone, what a weekend, amazing, I thought my T .I .2 would take off again, thank you. And remember, full switch off when you're around the parking lot, and again. What a fight you put out there today, really well deserved P8, fantastic job mate, and the team and the guys in the pit stop did a fantastic job as well, fantastic, great job.",
+   "duration": 0
+  },
+  "starts": [
+   {
+    "file": "bortoleto-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Qualifying/GABBOR01_5_20250628_165618.mp3",
+    "clip": "2025__Austrian_Grand_Prix__Qualifying__GABBOR01_5_20250628_165618",
+    "snippet": "Well, then you have made it to your first Q3. Let's go. I hope first of many. Let's go guys. Good job",
+    "duration": 13.8
+   },
+   {
+    "file": "bortoleto-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Belgian%20Grand%20Prix/Race/GABBOR01_5_20250727_170100.mp3",
+    "clip": "2025__Belgian_Grand_Prix__Race__GABBOR01_5_20250727_170100",
+    "snippet": "Nico needs to overtake him, man. If not, let me go. Okay, we are managing that here.",
+    "duration": 9
+   },
+   {
+    "file": "bortoleto-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Race/GABBOR01_5_20250629_154945.mp3",
+    "clip": "2025__Austrian_Grand_Prix__Race__GABBOR01_5_20250629_154945",
+    "snippet": "Is he letting me buy or what? Yes, but you need to get into DRS.",
+    "duration": 7.9
+   }
+  ]
+ },
+ "ocon": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Qualifying/ESTOCO01_31_20241122_224434.mp3",
+  "clip": "2024__Las_Vegas_Grand_Prix__Qualifying__ESTOCO01_31_20241122_224434",
+  "snippet": "Yeah, that's all there was in the lap. That was a good lap, so I'm pleased with myself. Yeah, that's good. Yeah, but we are four tenths of where we should be, so... Yeah, I know, I'm just giving you some information and some encouragement. It was a good lap, well done.",
+  "duration": 14.6,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Las%20Vegas%20Grand%20Prix/Qualifying/ESTOCO01_31_20241122_224434.mp3",
+   "clip": "2024__Las_Vegas_Grand_Prix__Qualifying__ESTOCO01_31_20241122_224434",
+   "snippet": "Yeah, that's all there was in the lap. That was a good lap, so I'm pleased with myself. Yeah, that's good. Yeah, but we are four tenths of where we should be, so... Yeah, I know, I'm just giving you some information and some encouragement. It was a good lap, well done.",
+   "duration": 14.6
+  },
+  "finish": {
+   "file": "ocon-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Japanese%20Grand%20Prix/Race/ESTOCO01_31_20250406_145344.mp3",
+   "clip": "2025__Japanese_Grand_Prix__Race__ESTOCO01_31_20250406_145344",
+   "snippet": "Please swap out of turn 14 22 laps to go probably next time anything fast",
+   "duration": 9
+  },
+  "starts": [
+   {
+    "file": "ocon-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Japanese%20Grand%20Prix/Race/ESTOCO01_31_20250406_145344.mp3",
+    "clip": "2025__Japanese_Grand_Prix__Race__ESTOCO01_31_20250406_145344",
+    "snippet": "Please swap out of turn 14 22 laps to go probably next time anything fast",
+    "duration": 9
+   },
+   {
+    "file": "ocon-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Qatar%20Grand%20Prix/Race/ESTOCO01_31_20241201_092926.mp3",
+    "clip": "2024__Qatar_Grand_Prix__Race__ESTOCO01_31_20241201_092926",
+    "snippet": "So it's a little bit difficult with the entries, but there's a lot of them on this tier mid corner, so increasing actually wasn't much worse on entry, but.",
+    "duration": 11.4
+   },
+   {
+    "file": "ocon-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Austrian%20Grand%20Prix/Race/ESTOCO01_31_20250629_160751.mp3",
+    "clip": "2025__Austrian_Grand_Prix__Race__ESTOCO01_31_20250629_160751",
+    "snippet": "Hey, people are starting to pit. We're doing our race. Your pace is still good. Bear in mind, there's always a risk passing everyone, like you saw. Understood.",
+    "duration": 12.6
+   }
+  ]
+ },
+ "bottas": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Abu%20Dhabi%20Grand%20Prix/Race/VALBOT01_77_20241208_170136.mp3",
+  "clip": "2024__Abu_Dhabi_Grand_Prix__Race__VALBOT01_77_20241208_170136",
+  "snippet": "Thank you Sauber. Thank you Ferrari. Let's do it",
+  "duration": 9.5,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Race/VALBOT01_77_20241103_085844.mp3",
+   "clip": "2024__Sa_o_Paulo_Grand_Prix__Race__VALBOT01_77_20241103_085844",
+   "snippet": "Albin will not take part in the race, but his grid spot will be left empty.",
+   "duration": 6.4
+  },
+  "finish": {
+   "file": "bottas-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Race/VALBOT01_77_20241103_120516.mp3",
+   "clip": "2024__Sa_o_Paulo_Grand_Prix__Race__VALBOT01_77_20241103_120516",
+   "snippet": "We've had some sitting ducks on the restarts with the tyre warm -up, but anyway, as well with things stabilised, we're still lacking pace.",
+   "duration": 10.3
+  },
+  "starts": [
+   {
+    "file": "bottas-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Sa%E2%95%A0%C3%A2o%20Paulo%20Grand%20Prix/Race/VALBOT01_77_20241103_085844.mp3",
+    "clip": "2024__Sa_o_Paulo_Grand_Prix__Race__VALBOT01_77_20241103_085844",
+    "snippet": "Albin will not take part in the race, but his grid spot will be left empty.",
+    "duration": 6.4
+   },
+   {
+    "file": "bottas-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/United%20States%20Grand%20Prix/Sprint/VALBOT01_77_20241019_130924.mp3",
+    "clip": "2024__United_States_Grand_Prix__Sprint__VALBOT01_77_20241019_130924",
+    "snippet": "Let's go sock six, sock six, and pedal position four.",
+    "duration": 6.1
+   },
+   {
+    "file": "bottas-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2024/Dutch%20Grand%20Prix/Race/VALBOT01_77_20240825_164642.mp3",
+    "clip": "2024__Dutch_Grand_Prix__Race__VALBOT01_77_20240825_164642",
+    "snippet": "Yeah, it was a very good start Valtteri, but obviously a difficult race for us after that. Yeah, I tried everything I could. Pushing as hard as I can, but we're just not quick enough this weekend. But let's regroup and try next week on a different track. Yep, we will. So it's a P19 for us with Joe in P20.",
+    "duration": 28
+   }
+  ]
+ },
+ "bearman": {
+  "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Spanish%20Grand%20Prix/Qualifying/OLIBEA01_87_20250531_162046.mp3",
+  "clip": "2025__Spanish_Grand_Prix__Qualifying__OLIBEA01_87_20250531_162046",
+  "snippet": "Oh, the last corner was a bit scary. Yeah, well done, man.",
+  "duration": 5.7,
+  "start": {
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Emilia%20Romagna%20Grand%20Prix/Qualifying/OLIBEA01_87_20250517_164041.mp3",
+   "clip": "2025__Emilia_Romagna_Grand_Prix__Qualifying__OLIBEA01_87_20250517_164041",
+   "snippet": "Why am I lost on the thing? Yeah, we're checking on it On the road? I didn't drill up now, I said Yeah, we're checking it. Hopefully it's gonna stick and we'll get ready to go anyway",
+   "duration": 15.8
+  },
+  "finish": {
+   "file": "bearman-finish.mp3",
+   "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Saudi%20Arabian%20Grand%20Prix/Practice%203/OLIBEA01_87_20250419_164106.mp3",
+   "clip": "2025__Saudi_Arabian_Grand_Prix__Practice_3__OLIBEA01_87_20250419_164106",
+   "snippet": "Oh, they're fantastic. There's a way stronger than yesterday. That's a good thing. Copy Holly",
+   "duration": 8.8
+  },
+  "starts": [
+   {
+    "file": "bearman-start.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Emilia%20Romagna%20Grand%20Prix/Qualifying/OLIBEA01_87_20250517_164041.mp3",
+    "clip": "2025__Emilia_Romagna_Grand_Prix__Qualifying__OLIBEA01_87_20250517_164041",
+    "snippet": "Why am I lost on the thing? Yeah, we're checking on it On the road? I didn't drill up now, I said Yeah, we're checking it. Hopefully it's gonna stick and we'll get ready to go anyway",
+    "duration": 15.8
+   },
+   {
+    "file": "bearman-start2.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Las%20Vegas%20Grand%20Prix/Race/OLIBEA01_87_20251122_202907.mp3",
+    "clip": "2025__Las_Vegas_Grand_Prix__Race__OLIBEA01_87_20251122_202907",
+    "snippet": "It's not it's pretty it's correct. It's not it's pretty on Dex with your minder",
+    "duration": 7.6
+   },
+   {
+    "file": "bearman-start3.mp3",
+    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Chinese%20Grand%20Prix/Race/OLIBEA01_87_20250323_155435.mp3",
+    "clip": "2025__Chinese_Grand_Prix__Race__OLIBEA01_87_20250323_155435",
+    "snippet": "Ciao. Thanks, Manali.",
+    "duration": 7.2
+   }
+  ]
+ }
+}

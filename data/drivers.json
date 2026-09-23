@@ -1,0 +1,398 @@
+[
+ {
+  "id": "leclerc",
+  "number": 16,
+  "name": "Charles Leclerc",
+  "team": "Scuderia Ferrari",
+  "color": "#E10600",
+  "radioStart": "Focus full attack \u2014 we are on plan A.",
+  "radioMid": "Good pace, keep pushing, keep pushing.",
+  "radioEnd": "P1! Grazie ragazzi, that was amazing!",
+  "photo": "assets/drivers/leclerc.png",
+  "pitRadio": "assets/radio/leclerc.mp3",
+  "startRadio": [
+   "assets/radio/leclerc-start.mp3",
+   "assets/radio/leclerc-start2.mp3",
+   "assets/radio/leclerc-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/leclerc-finish.mp3"
+ },
+ {
+  "id": "hamilton",
+  "number": 44,
+  "name": "Lewis Hamilton",
+  "team": "Scuderia Ferrari",
+  "color": "#DA291C",
+  "radioStart": "It's hammer time. Maximum focus.",
+  "radioMid": "Bono, the tyres feel great. Keep them coming.",
+  "radioEnd": "Get in there! What a stint, guys!",
+  "photo": "assets/drivers/hamilton.png",
+  "pitRadio": "assets/radio/hamilton.mp3",
+  "startRadio": [
+   "assets/radio/hamilton-start.mp3",
+   "assets/radio/hamilton-start2.mp3",
+   "assets/radio/hamilton-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/hamilton-finish.mp3"
+ },
+ {
+  "id": "verstappen",
+  "number": 1,
+  "name": "Max Verstappen",
+  "team": "Red Bull Racing",
+  "color": "#1E41FF",
+  "radioStart": "Head down, full send from lap one.",
+  "radioMid": "Simply lovely pace. Keep it there.",
+  "radioEnd": "Haha, yes boys! That was mega!",
+  "photo": "assets/drivers/verstappen.png",
+  "pitRadio": "assets/radio/verstappen.mp3",
+  "startRadio": [
+   "assets/radio/verstappen-start.mp3",
+   "assets/radio/verstappen-start2.mp3",
+   "assets/radio/verstappen-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/verstappen-finish.mp3"
+ },
+ {
+  "id": "tsunoda",
+  "number": 22,
+  "name": "Yuki Tsunoda",
+  "team": "Red Bull Racing",
+  "color": "#1E41FF",
+  "radioStart": "Okay, full push, no mistakes!",
+  "radioMid": "Car feels good, keep pushing!",
+  "radioEnd": "Nice! Thank you, guys, great job!",
+  "photo": "assets/drivers/tsunoda.png",
+  "pitRadio": "assets/radio/tsunoda.mp3",
+  "startRadio": [
+   "assets/radio/tsunoda-start.mp3",
+   "assets/radio/tsunoda-start2.mp3",
+   "assets/radio/tsunoda-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/tsunoda-finish.mp3"
+ },
+ {
+  "id": "norris",
+  "number": 4,
+  "name": "Lando Norris",
+  "team": "McLaren F1 Team",
+  "color": "#FF8000",
+  "radioStart": "Let's gooo! Smooth operations.",
+  "radioMid": "This is fun, the rhythm is unreal.",
+  "radioEnd": "Wooohooo! Papaya on top, baby!",
+  "photo": "assets/drivers/norris.png",
+  "pitRadio": "assets/radio/norris.mp3",
+  "startRadio": [
+   "assets/radio/norris-start.mp3",
+   "assets/radio/norris-start2.mp3",
+   "assets/radio/norris-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/norris-finish.mp3"
+ },
+ {
+  "id": "piastri",
+  "number": 81,
+  "name": "Oscar Piastri",
+  "team": "McLaren F1 Team",
+  "color": "#FF8000",
+  "radioStart": "Understood. Head down.",
+  "radioMid": "Yeah, pace looks decent.",
+  "radioEnd": "Yeah... that was alright.",
+  "photo": "assets/drivers/piastri.png",
+  "pitRadio": "assets/radio/piastri.mp3",
+  "startRadio": [
+   "assets/radio/piastri-start.mp3",
+   "assets/radio/piastri-start2.mp3",
+   "assets/radio/piastri-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/piastri-finish.mp3"
+ },
+ {
+  "id": "russell",
+  "number": 63,
+  "name": "George Russell",
+  "team": "Mercedes-AMG Petronas",
+  "color": "#00D2BE",
+  "radioStart": "Come on! Let's go get it!",
+  "radioMid": "Strong pace, keep it coming.",
+  "radioEnd": "Yesss boys! Come on!!",
+  "photo": "assets/drivers/russell.png",
+  "pitRadio": "assets/radio/russell.mp3",
+  "startRadio": [
+   "assets/radio/russell-start.mp3",
+   "assets/radio/russell-start2.mp3",
+   "assets/radio/russell-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/russell-finish.mp3"
+ },
+ {
+  "id": "antonelli",
+  "number": 12,
+  "name": "Andrea Kimi Antonelli",
+  "team": "Mercedes-AMG Petronas",
+  "color": "#00D2BE",
+  "radioStart": "Forza! Full focus from lap one!",
+  "radioMid": "Getting quicker every lap, let's go!",
+  "radioEnd": "Mamma mia, what a stint!",
+  "photo": "assets/drivers/antonelli.png",
+  "pitRadio": "assets/radio/antonelli.mp3",
+  "startRadio": [
+   "assets/radio/antonelli-start.mp3",
+   "assets/radio/antonelli-start2.mp3",
+   "assets/radio/antonelli-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/antonelli-finish.mp3"
+ },
+ {
+  "id": "alonso",
+  "number": 14,
+  "name": "Fernando Alonso",
+  "team": "Aston Martin F1",
+  "color": "#006F62",
+  "radioStart": "Maximum attack. No lift.",
+  "radioMid": "Unbelievable pace. Keep going.",
+  "radioEnd": "Magic! As always, magic!",
+  "photo": "assets/drivers/alonso.png",
+  "pitRadio": "assets/radio/alonso.mp3",
+  "startRadio": [
+   "assets/radio/alonso-start.mp3",
+   "assets/radio/alonso-start2.mp3",
+   "assets/radio/alonso-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/alonso-finish.mp3"
+ },
+ {
+  "id": "stroll",
+  "number": 18,
+  "name": "Lance Stroll",
+  "team": "Aston Martin F1",
+  "color": "#006F62",
+  "radioStart": "Okay, building the rhythm.",
+  "radioMid": "Feels okay, still pushing.",
+  "radioEnd": "Good stint. Thanks, guys.",
+  "photo": "assets/drivers/stroll.png",
+  "pitRadio": "assets/radio/stroll.mp3",
+  "startRadio": [
+   "assets/radio/stroll-start.mp3",
+   "assets/radio/stroll-start2.mp3",
+   "assets/radio/stroll-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/stroll-finish.mp3"
+ },
+ {
+  "id": "gasly",
+  "number": 10,
+  "name": "Pierre Gasly",
+  "team": "Alpine F1 Team",
+  "color": "#0090FF",
+  "radioStart": "Allez! Full focus, let's go!",
+  "radioMid": "Good rhythm, I'm on it.",
+  "radioEnd": "Allez les gars! Mega job!",
+  "photo": "assets/drivers/gasly.png",
+  "pitRadio": "assets/radio/gasly.mp3",
+  "startRadio": [
+   "assets/radio/gasly-start.mp3",
+   "assets/radio/gasly-start2.mp3",
+   "assets/radio/gasly-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/gasly-finish.mp3"
+ },
+ {
+  "id": "colapinto",
+  "number": 43,
+  "name": "Franco Colapinto",
+  "team": "Alpine F1 Team",
+  "color": "#0090FF",
+  "radioStart": "Let's go! Full send from lap one!",
+  "radioMid": "The car is alive, I'm loving it!",
+  "radioEnd": "Vamos!! What a stint, guys!",
+  "photo": "assets/drivers/colapinto.png",
+  "pitRadio": "assets/radio/colapinto.mp3",
+  "startRadio": [
+   "assets/radio/colapinto-start.mp3",
+   "assets/radio/colapinto-start2.mp3",
+   "assets/radio/colapinto-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/colapinto-finish.mp3"
+ },
+ {
+  "id": "albon",
+  "number": 23,
+  "name": "Alexander Albon",
+  "team": "Williams Racing",
+  "color": "#005AFF",
+  "radioStart": "Let's find the flow.",
+  "radioMid": "Tyres holding on, nice balance.",
+  "radioEnd": "Clean stint. Nicely done, everyone.",
+  "photo": "assets/drivers/albon.png",
+  "pitRadio": "assets/radio/albon.mp3",
+  "startRadio": [
+   "assets/radio/albon-start.mp3",
+   "assets/radio/albon-start2.mp3",
+   "assets/radio/albon-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/albon-finish.mp3"
+ },
+ {
+  "id": "sainz",
+  "number": 55,
+  "name": "Carlos Sainz",
+  "team": "Williams Racing",
+  "color": "#005AFF",
+  "radioStart": "Smooth operator mode: on.",
+  "radioMid": "Chili levels optimal. Keep pushing.",
+  "radioEnd": "Smooth as always! Vamos!",
+  "photo": "assets/drivers/sainz.png",
+  "pitRadio": "assets/radio/sainz.mp3",
+  "startRadio": [
+   "assets/radio/sainz-start.mp3",
+   "assets/radio/sainz-start2.mp3",
+   "assets/radio/sainz-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/sainz-finish.mp3"
+ },
+ {
+  "id": "lawson",
+  "number": 30,
+  "name": "Liam Lawson",
+  "team": "VCARB",
+  "color": "#5E8FAA",
+  "radioStart": "Let's go! Full commitment!",
+  "radioMid": "Pushing hard, it feels good!",
+  "radioEnd": "Get in! That's how we do it!",
+  "photo": "assets/drivers/lawson.png",
+  "pitRadio": "assets/radio/lawson.mp3",
+  "startRadio": [
+   "assets/radio/lawson-start.mp3",
+   "assets/radio/lawson-start2.mp3",
+   "assets/radio/lawson-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/lawson-finish.mp3"
+ },
+ {
+  "id": "hadjar",
+  "number": 6,
+  "name": "Isack Hadjar",
+  "team": "VCARB",
+  "color": "#5E8FAA",
+  "radioStart": "Allez, let's attack!",
+  "radioMid": "Improving every single lap!",
+  "radioEnd": "Magnifique! Great stint, guys!",
+  "photo": "assets/drivers/hadjar.png",
+  "pitRadio": "assets/radio/hadjar.mp3",
+  "startRadio": [
+   "assets/radio/hadjar-start.mp3",
+   "assets/radio/hadjar-start2.mp3",
+   "assets/radio/hadjar-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/hadjar-finish.mp3"
+ },
+ {
+  "id": "hulkenberg",
+  "number": 27,
+  "name": "Nico H\u00fclkenberg",
+  "team": "Audi F1 Team",
+  "color": "#AD1E2D",
+  "radioStart": "Let's be precise. Every lap counts.",
+  "radioMid": "Like clockwork. Keep it there.",
+  "radioEnd": "What a stint! Sorry for shouting... not sorry!",
+  "photo": "assets/drivers/hulkenberg.png",
+  "pitRadio": "assets/radio/hulkenberg.mp3",
+  "startRadio": [
+   "assets/radio/hulkenberg-start.mp3",
+   "assets/radio/hulkenberg-start2.mp3",
+   "assets/radio/hulkenberg-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/hulkenberg-finish.mp3"
+ },
+ {
+  "id": "bortoleto",
+  "number": 5,
+  "name": "Gabriel Bortoleto",
+  "team": "Audi F1 Team",
+  "color": "#AD1E2D",
+  "radioStart": "Let's go! Total focus!",
+  "radioMid": "Gaining confidence every lap!",
+  "radioEnd": "Sensational! Thank you, team!",
+  "photo": "assets/drivers/bortoleto.png",
+  "pitRadio": "assets/radio/bortoleto.mp3",
+  "startRadio": [
+   "assets/radio/bortoleto-start.mp3",
+   "assets/radio/bortoleto-start2.mp3",
+   "assets/radio/bortoleto-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/bortoleto-finish.mp3"
+ },
+ {
+  "id": "ocon",
+  "number": 31,
+  "name": "Esteban Ocon",
+  "team": "Haas F1 Team",
+  "color": "#787878",
+  "radioStart": "Allez! Clean stint incoming!",
+  "radioMid": "Managing well, right on target.",
+  "radioEnd": "Yes, boys! Get in there!",
+  "photo": "assets/drivers/ocon.png",
+  "pitRadio": "assets/radio/ocon.mp3",
+  "startRadio": [
+   "assets/radio/ocon-start.mp3",
+   "assets/radio/ocon-start2.mp3",
+   "assets/radio/ocon-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/ocon-finish.mp3"
+ },
+ {
+  "id": "bearman",
+  "number": 87,
+  "name": "Oliver Bearman",
+  "team": "Haas F1 Team",
+  "color": "#787878",
+  "radioStart": "Big opportunity. Full focus!",
+  "radioMid": "Loving every second of this!",
+  "radioEnd": "That was mega! Thank you, guys!",
+  "photo": "assets/drivers/bearman.png",
+  "pitRadio": "assets/radio/bearman.mp3",
+  "startRadio": [
+   "assets/radio/bearman-start.mp3",
+   "assets/radio/bearman-start2.mp3",
+   "assets/radio/bearman-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/bearman-finish.mp3"
+ },
+ {
+  "id": "perez",
+  "number": 11,
+  "name": "Sergio P\u00e9rez",
+  "team": "Cadillac F1 Team",
+  "color": "#C0A062",
+  "radioStart": "Vamos! Manage it like a master.",
+  "radioMid": "Tyre whisperer mode: on.",
+  "radioEnd": "Viva Mexico! Legendary stint!",
+  "photo": "assets/drivers/perez.png",
+  "pitRadio": "assets/radio/perez.mp3",
+  "startRadio": [
+   "assets/radio/perez-start.mp3",
+   "assets/radio/perez-start2.mp3",
+   "assets/radio/perez-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/perez-finish.mp3"
+ },
+ {
+  "id": "bottas",
+  "number": 77,
+  "name": "Valtteri Bottas",
+  "team": "Cadillac F1 Team",
+  "color": "#C0A062",
+  "radioStart": "To whom it may concern: full focus.",
+  "radioMid": "Mullet-powered pace. Keep going.",
+  "radioEnd": "Woohoo! That's a mega stint!",
+  "photo": "assets/drivers/bottas.png",
+  "pitRadio": "assets/radio/bottas.mp3",
+  "startRadio": [
+   "assets/radio/bottas-start.mp3",
+   "assets/radio/bottas-start2.mp3",
+   "assets/radio/bottas-start3.mp3"
+  ],
+  "finishRadio": "assets/radio/bottas-finish.mp3"
+ }
+]

@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 [YOUR NAME]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the original source code of this project (HTML, CSS, JavaScript in
+index.html, css/, js/ and tools/, and the contents of data/drivers.json and
+data/circuits.json path conversions), to deal in the Software without
+restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+EXCLUDED FROM THIS LICENSE (all rights reserved by their owners, see
+credits.html):
+- Driver portrait images in assets/drivers/ (c) Sky Italia / Sky Sport —
+  personal, non-commercial use only within this project.
+- Source track geometries in vendor/geojson/ from bacinger/f1-circuits,
+  which carry their own MIT License (c) 2019-2025 Tomislav Bacinger.
+- "Formula1 Display" and "FerrariSans" typefaces (proprietary, not bundled).
+- F1, FORMULA 1, team/driver names and all related trademarks, which belong
+  to Formula One Licensing B.V. and their respective owners.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
