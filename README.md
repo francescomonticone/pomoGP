@@ -1,139 +1,109 @@
-# PomoGP · Pomodoro / Focus Timer a tema Formula 1
+# PomoGP · Formula 1 Pomodoro / Focus Timer
 
-Single-page statica: timer Pomodoro configurabile + mappa circuito F1 che si colora
-di rosso man mano che la fase avanza. Nessun backend, nessun build.
+A static single page: a configurable Pomodoro timer plus an F1 circuit map that
+fills up in red as the phase progresses. No backend, no build step.
 
-**Perché vanilla HTML/CSS/JS (niente React/Vite):** l'app è una sola pagina con un
-solo state machine (timer + SVG). Vanilla elimina build step e dipendenze, rende il
-loop `requestAnimationFrame` + `getPointAtLength()` diretto sul DOM, e il deploy è un
-semplice hosting statico. React avrebbe aggiunto complessità senza benefici.
+**Why vanilla HTML/CSS/JS (no React/Vite):** the app is a single page with one
+state machine (timer + SVG). Vanilla removes build steps and dependencies, keeps
+the `requestAnimationFrame` + `getPointAtLength()` loop directly on the DOM, and
+deploys as plain static hosting. React would add complexity with no benefit.
 
-## 1. Struttura delle cartelle
+## 1. Folder structure
 
 ```
 PomoGP/
-  index.html            → markup semantico (header, timer, circuito, modale pilota)
-  css/styles.css        → design system (token Ferrari/F1, layout 2 colonne, responsive)
-  js/app.js             → timer timestamp-based, SVG progress, pilota, storage, audio
-  data/drivers.json     → 22 piloti stagione 2026 (id, numero, nome, scuderia, colore, team radio)
-  data/circuits.json    → 24 circuiti calendario 2026 (id, nome, paese, lunghezza km, path SVG reale)
-  assets/drivers/       → 22 ritratti piloti self-hosted (512px PNG, © Sky — uso personale)
-  tools/convert.py      → pipeline GeoJSON → SVG (proiezione, RDP 2 m, winding, start/finish)
-  tools/overrides.json  → calibrazione documentata (senso di marcia, nodi S/F)
-  tools/analyze.py      → verifica senso di marcia via tag oneway di OpenStreetMap
-  vendor/geojson/       → geometrie sorgente (bacinger/f1-circuits, MIT — non modificare a mano)
-  fonts/README.md       → dove mettere i woff2 con licenza (Formula1 Display + FerrariSans)
-  README.md             → questo file
+  index.html            → semantic markup (header, timer, circuit, setup wizard, lights)
+  css/styles.css        → design system (Ferrari/F1 tokens, 2-column responsive layout)
+  js/app.js             → timestamp-based timer, SVG progress, driver, storage, audio, lights
+  data/drivers.json     → 22 drivers, 2026 season (id, number, name, team, color, photo, audio, team radio)
+  data/circuits.json    → 24 circuits, 2026 calendar (id, name, country, length km, real SVG path)
+  assets/drivers/       → 22 self-hosted driver portraits (512px PNG, © Sky — personal use)
+  assets/cars/          → 11 official 2026 car photos (formula1.com, © Formula One — personal use)
+  assets/radio/         → 110 original team radio MP3s (© Formula One — personal use)
+  tools/convert.py      → GeoJSON → SVG pipeline (projection, 2 m RDP, winding, start/finish)
+  tools/overrides.json  → documented calibration (race direction, S/F nodes)
+  tools/analyze.py      → race-direction check via OpenStreetMap oneway tags
+  tools/radio.py        → downloads 1 "box" clip per driver (Formula Dream archive)
+  tools/radio_moments.py→ downloads 3 start + 1 finish jingle per driver
+  tools/radio_map.json  → chosen clips with transcripts (pin alternatives via PIN / PIN_MOMENT)
+  vendor/geojson/       → source geometries (bacinger/f1-circuits, MIT — don't edit by hand)
+  fonts/README.md       → where licensed woff2 fonts go (Formula1 Display + FerrariSans)
+  privacy/cookies/terms/credits.html → legal pages + attributions
+  ARCHITECTURE.md       → how the project works (Italian)
+  README.md             → this file
 ```
 
-## 2. Esecuzione in locale
+## 2. Run locally
 
-Serve un server http (i `fetch()` dei JSON non funzionano da `file://`):
+Any static server works (`fetch()` for the JSON files fails on `file://`):
 
 ```bash
 cd PomoGP
-npx serve .            # oppure: python3 -m http.server 8080
-# apri http://localhost:3000 (o :8080)
+npx serve .            # or: python3 -m http.server 8080
+# open http://localhost:3000 (or :8080)
 ```
 
 ## 3. Deploy
 
-Sito 100% statico, nessun env, nessuna build.
+100% static site, no env, no build.
 
-- **Vercel**: `vercel` nella cartella (framework preset: Other / static), output `.`
-- **Netlify**: drag & drop della cartella, oppure `netlify deploy --dir=. --prod`
-- **GitHub Pages**: push del repo → Settings → Pages → Deploy from branch → root `/`
+- **Vercel**: `vercel` in the folder (framework preset: Other / static), output `.`
+- **Netlify**: drag & drop the folder, or `netlify deploy --dir=. --prod`
+- **GitHub Pages**: Settings → Pages → Deploy from branch → `main` / root
 
-## 4. Funzioni principali
+## 4. Features
 
-- Timer 25/5/15 × 4 configurabile, autostart on/off, `localStorage` chiave `pomogp:v1`
-- Precisione via `performance.now()` + `requestAnimationFrame`; `setInterval` 1s solo per il titolo tab in background
-- Tab title `mm:ss · Focus`, beep WebAudio + `Notification` opzionali
-- Circuito: doppio path (bianco sotto, `#E10600` sopra) con `stroke-dashoffset`,
-  car dot con `getPointAtLength()`, start/finish a scacchi, tacche settori a 1/3 e 2/3,
-  overlay pit giallo in pausa, overlay `P1 · Session complete` a fine ciclo
-- Pilota: modale alla prima visita, chip sempre visibile, watermark numero, team radio start/mid/end
-- Tastiera: `Spazio` start/pausa, `R` reset, `S` salta · `aria-live` per annunci · `prefers-reduced-motion` rispettato
+- First-run setup wizard: Team (with car photo) → Driver (photo slideshow) → Tyre compound
+  (Soft 15/3 · Medium 25/5 · Hard 45/10 · Custom) + laps & pit durations
+- F1 start lights gantry: 5-light FIA sequence with random hold on every fresh focus
+  start, auto-closes into “Lights out and away we go!” (ESC aborts, Space jumps the start)
+- Timestamp-accurate timer (`performance.now()` + `requestAnimationFrame`); 1 s `setInterval`
+  only for the background tab title
+- Tab title `mm:ss · Focus`, synthesized WebAudio beeps + optional `Notification`
+- Real team radio per driver: rotating start jingles, “Box, box!” on pit entry,
+  P1 celebration at cycle end (Settings → “Real pit team radio”, falls back to beeps)
+- Circuit: white base + `#E10600` progress path with `stroke-dashoffset`,
+  car dot via `getPointAtLength()`, checkered start/finish, sector ticks at 1/3 and 2/3,
+  yellow pit overlay on breaks, `P1 · Session complete` overlay at cycle end
+- Driver chip, watermark number, team radio text at start/mid/end
+- Keyboard: `Space` start/pause, `R` reset, `S` skip · `aria-live` announcements ·
+  `prefers-reduced-motion` respected · settings in `localStorage` (`pomogp:v2`)
 
-## 5. Dati e licenze — tracciati REALI
+## 5. Data & licenses — REAL tracks
 
-Le geometrie in `data/circuits.json` sono reali, non disegnate a mano:
+The geometries in `data/circuits.json` are real, not hand-drawn:
 
-- **Sorgente**: [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits) —
-  GeoJSON dei circuiti F1, licenza **MIT** (© 2019–2025 Tomislav Bacinger).
-  Citazione obbligatoria se ridistribuisci i dati.
-- **Conversione**: `python3 tools/convert.py` — proiezione equirettangolare in metri,
-  semplificazione Ramer-Douglas-Peucker con tolleranza 2 m, fit in `viewBox 0 0 1000 600`.
-- **Senso di marcia verificato** per tutti i 24 GP (tag oneway di OpenStreetMap via
-  `tools/analyze.py` + voci Wikipedia/StatsF1/F1DB; documentato in `tools/overrides.json`).
-- **Start/finish**: nodo OSM `raceway=start-finish` dove mappato (Monaco, esatto);
-  altrove indice 0 del dataset (verificato <50 m dal nodo S/F a Melbourne e Austin).
-- L'array `FALLBACK_CIRCUITS` in `js/app.js` è un mirror auto-generato
-  (`tools/fallback_circuits.js`) per far funzionare l'app anche da `file://`.
+- **Source**: [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits) —
+  F1 circuit GeoJSON, **MIT** license (© 2019–2025 Tomislav Bacinger).
+  Attribution required if you redistribute the data.
+- **Conversion**: `python3 tools/convert.py` — equirectangular projection to meters,
+  Ramer-Douglas-Peucker simplification at 2 m tolerance, fit into `viewBox 0 0 1000 600`.
+- **Race direction verified** for all 24 GPs (OpenStreetMap oneway tags via
+  `tools/analyze.py` + Wikipedia/StatsF1/F1DB entries; documented in `tools/overrides.json`).
+- **Start/finish**: OSM `raceway=start-finish` node where mapped (Monaco, exact);
+  otherwise dataset index 0 (verified <50 m from the S/F node at Melbourne and Austin).
+- The `FALLBACK_CIRCUITS` array in `js/app.js` is an auto-generated mirror
+  (`tools/fallback_circuits.js`) so the app also works from `file://`.
 
-## 6. Punti da completare a cura tua
+## 6. Third-party assets (personal use — see credits.html)
 
-1. **Font con licenza** (vedi `fonts/README.md`):
-   - `Formula1-Display-Regular.woff2` + `Formula1-Display-Bold.woff2` (font di f1experiences.com — proprietario, da acquistare)
-   - `FerrariSans-Regular.woff2` + `FerrariSans-Medium.woff2` (font di ferrari.com — proprietario, non pubblico; ok fallback Barlow Condensed)
-2. **Contenuti 2026**: aggiorna `data/drivers.json` (line-up definitiva) a stagione iniziata;
-   per il nuovo **Madring** esiste già `vendor` upstream (`es-2026.geojson`) se vuoi aggiungerlo
-   al calendario: scaricalo in `vendor/geojson/madrid.geojson`, aggiungi l'id in
-   `tools/convert.py` + una riga in `data/circuits.json`, poi rilancia la conversione.
+- Driver portraits in `assets/drivers/` — © Sky Italia / Sky Sport.
+- Team car photos in `assets/cars/` — © Formula One (formula1.com).
+- Team radio MP3s in `assets/radio/` — © Formula One (via Formula Dream archive).
+- “Formula1 Display” and “FerrariSans” typefaces are proprietary and **not** bundled;
+  the UI falls back to Titillium Web + Barlow Condensed (see `fonts/README.md`).
 
-## Driver photos — self-hosted
-
-Driver portraits live in `assets/drivers/<driver-id>.png` (22 files, ~6.6 MB),
-downloaded from Sky Sport for personal use — images are © Sky / rights holders.
-No external requests: the app works fully offline (except the optional Google
-Fonts fallback). To replace a portrait, overwrite the PNG keeping the same
-filename; the app degrades gracefully anyway (broken images hide themselves and
-the driver number badge remains).
-
-## Publish on GitHub (repo `pomoGP`)
-
-`gh` is not logged in here, so run these commands yourself (or create the repo
-on github.com/new and follow the push instructions shown there):
-
-```bash
-cd PomoGP
-git init
-git add .
-git commit -m "PomoGP: F1 focus timer with real tracks, setup wizard, legal pages"
-gh auth login
-gh repo create pomoGP --public --source=. --push
-```
-
-Prefer GitHub Pages for hosting? After pushing: repo → Settings → Pages →
-Deploy from branch → `main` / root. The site (including privacy/cookies/terms/
-credits pages) is 100% static.
-
-Before going public, replace the placeholders (required by GDPR Art. 13):
-- `[YOUR NAME]` and `[YOUR EMAIL]` in `privacy.html`, `terms.html`, `credits.html`, `LICENSE`
-
-## Pit team radio — original audio
-
-Full F1 sound scheme — 110 MP3 (~20 MB), 3+ clips per driver:
-- `assets/radio/<id>-start{,2,3}.mp3` rotate randomly on every fresh focus start (“Let’s go!”)
-- `assets/radio/<id>.mp3` plays on every pit entry (“Box, box!”)
-- `assets/radio/<id>-finish.mp3` celebrates the P1 overlay at cycle end
-Downloaded with `python3 tools/radio.py` (pit clips) and
-`python3 tools/radio_moments.py` (start/finish) from the Formula Dream Team Radio
-Archive (formuladream.app, CloudFront CDN). Picks recorded with transcripts in
-`tools/radio_map.json`; pin alternatives via `PIN` / `PIN_MOMENT` and re-run.
-Toggle: Settings → “Real pit team radio”. Missing files fall back to beeps.
-
-⚠️ Legal: team radio audio is © Formula One (FOM), all rights reserved — personal,
-non-commercial use only. Committing it to a **public** repo carries takedown risk:
-same takedown promise as the photos applies (see credits.html). If in doubt, delete
+⚠️ Committing these to a **public** repo carries takedown risk. If in doubt, delete
 `assets/radio/*.mp3` before pushing — the app falls back to synthesized beeps.
 
-## Team car photos + start lights
+## 7. Your TODOs before going public
 
-- Official 2026 car photos from formula1.com (`assets/cars/<team>.webp`, ~412 KB total)
-  shown on the team cards in setup step 1. © Formula One — personal use only,
-  same takedown promise as driver portraits (see credits.html).
-- F1 start lights gantry: pressing Start on a fresh focus stint (or the header
-  “Lights out” button) runs the 5-light FIA sequence with random hold, then
-  “Lights out and away we go!”, auto-closes and starts the timer. ESC aborts,
-  Space triggers an early lights-out, “Instant start” skips the ceremony.
+1. **Licensed fonts** (see `fonts/README.md`):
+   - `Formula1-Display-Regular.woff2` + `Formula1-Display-Bold.woff2` (f1experiences.com font — proprietary, paid)
+   - `FerrariSans-Regular.woff2` + `FerrariSans-Medium.woff2` (ferrari.com font — proprietary, not public; Barlow Condensed fallback is fine)
+2. **Replace placeholders** (required by GDPR Art. 13):
+   `[YOUR NAME]` and `[YOUR EMAIL]` in `privacy.html`, `terms.html`, `credits.html`, `LICENSE`
+3. **2026 contents**: update `data/drivers.json` once the final line-up is set;
+   upstream already has Madrid (`es-2026.geojson`) if you want to add it:
+   download into `vendor/geojson/madrid.geojson`, add the id in
+   `tools/convert.py` + one row in `data/circuits.json`, then re-run the conversion.
