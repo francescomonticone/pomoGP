@@ -1,109 +1,47 @@
-# PomoGP · Formula 1 Pomodoro / Focus Timer
+# PomoGP · Formula 1 Focus Timer
 
-A static single page: a configurable Pomodoro timer plus an F1 circuit map that
-fills up in red as the phase progresses. No backend, no build step.
+**Train your focus like a race weekend.** PomoGP is a Pomodoro timer dressed as
+Formula 1: pick your team, driver and tyre compound, survive the start lights,
+push through focus stints, and recover in the pit lane while a real circuit
+fills up in red under you.
 
-**Why vanilla HTML/CSS/JS (no React/Vite):** the app is a single page with one
-state machine (timer + SVG). Vanilla removes build steps and dependencies, keeps
-the `requestAnimationFrame` + `getPointAtLength()` loop directly on the DOM, and
-deploys as plain static hosting. React would add complexity with no benefit.
+🌐 **Live:** https://francescomonticone.github.io/pomoGP/
 
-## 1. Folder structure
+## How it works
 
-```
-PomoGP/
-  index.html            → semantic markup (header, timer, circuit, setup wizard, lights)
-  css/styles.css        → design system (Ferrari/F1 tokens, 2-column responsive layout)
-  js/app.js             → timestamp-based timer, SVG progress, driver, storage, audio, lights
-  data/drivers.json     → 22 drivers, 2026 season (id, number, name, team, color, photo, audio, team radio)
-  data/circuits.json    → 24 circuits, 2026 calendar (id, name, country, length km, real SVG path)
-  assets/drivers/       → 22 self-hosted driver portraits (512px PNG, © Sky — personal use)
-  assets/cars/          → 11 official 2026 car photos (formula1.com, © Formula One — personal use)
-  assets/radio/         → 110 original team radio MP3s (© Formula One — personal use)
-  tools/convert.py      → GeoJSON → SVG pipeline (projection, 2 m RDP, winding, start/finish)
-  tools/overrides.json  → documented calibration (race direction, S/F nodes)
-  tools/analyze.py      → race-direction check via OpenStreetMap oneway tags
-  tools/radio.py        → downloads 1 "box" clip per driver (Formula Dream archive)
-  tools/radio_moments.py→ downloads 3 start + 1 finish jingle per driver
-  tools/radio_map.json  → chosen clips with transcripts (pin alternatives via PIN / PIN_MOMENT)
-  vendor/geojson/       → source geometries (bacinger/f1-circuits, MIT — don't edit by hand)
-  fonts/README.md       → where licensed woff2 fonts go (Formula1 Display + FerrariSans)
-  privacy/cookies/terms/credits.html → legal pages + attributions
-  ARCHITECTURE.md       → how the project works (Italian)
-  README.md             → this file
-```
+1. **Setup** — choose your team (with its 2026 car), your driver (photo gallery)
+   and your tyre compound: **Soft** 15/3 · **Medium** 25/5 · **Hard** 45/10 — or
+   go Custom with your own timings, laps and pit stops.
+2. **Lights out** — every focus stint starts with the 5-light FIA sequence and
+   “Lights out and away we go!”.
+3. **Focus** — the countdown runs while the real track map fills in red and your
+   car moves along it, sector by sector.
+4. **Pit stop** — relax to your driver's original “Box, box!” team radio while
+   the track cools down.
+5. **P1** — finish all your laps to take the chequered flag with a driver
+   celebration call.
 
-## 2. Run locally
+Shortcuts: `Space` start/pause · `R` reset · `S` skip phase. Your setup is
+remembered in your browser — no account, no server, no tracking.
 
-Any static server works (`fetch()` for the JSON files fails on `file://`):
+## Run it yourself
+
+The site is 100% static. Easiest: open the live link above. Locally:
 
 ```bash
-cd PomoGP
-npx serve .            # or: python3 -m http.server 8080
-# open http://localhost:3000 (or :8080)
+npx serve .   # then open http://localhost:3000
 ```
 
-## 3. Deploy
+## Credits
 
-100% static site, no env, no build.
+- Track geometries: [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits) (MIT)
+- Driver portraits: © Sky Sport · Team cars: © Formula One · Team radios: © Formula One —
+  included for personal, non-commercial use (see `credits.html`)
+- Typefaces fall back to Titillium Web + Barlow Condensed (OFL)
 
-- **Vercel**: `vercel` in the folder (framework preset: Other / static), output `.`
-- **Netlify**: drag & drop the folder, or `netlify deploy --dir=. --prod`
-- **GitHub Pages**: Settings → Pages → Deploy from branch → `main` / root
+Unofficial fan project — not affiliated with or endorsed by Formula 1, the FIA,
+or any team or driver (see `terms.html`).
 
-## 4. Features
+## License
 
-- First-run setup wizard: Team (with car photo) → Driver (photo slideshow) → Tyre compound
-  (Soft 15/3 · Medium 25/5 · Hard 45/10 · Custom) + laps & pit durations
-- F1 start lights gantry: 5-light FIA sequence with random hold on every fresh focus
-  start, auto-closes into “Lights out and away we go!” (ESC aborts, Space jumps the start)
-- Timestamp-accurate timer (`performance.now()` + `requestAnimationFrame`); 1 s `setInterval`
-  only for the background tab title
-- Tab title `mm:ss · Focus`, synthesized WebAudio beeps + optional `Notification`
-- Real team radio per driver: rotating start jingles, “Box, box!” on pit entry,
-  P1 celebration at cycle end (Settings → “Real pit team radio”, falls back to beeps)
-- Circuit: white base + `#E10600` progress path with `stroke-dashoffset`,
-  car dot via `getPointAtLength()`, checkered start/finish, sector ticks at 1/3 and 2/3,
-  yellow pit overlay on breaks, `P1 · Session complete` overlay at cycle end
-- Driver chip, watermark number, team radio text at start/mid/end
-- Keyboard: `Space` start/pause, `R` reset, `S` skip · `aria-live` announcements ·
-  `prefers-reduced-motion` respected · settings in `localStorage` (`pomogp:v2`)
-
-## 5. Data & licenses — REAL tracks
-
-The geometries in `data/circuits.json` are real, not hand-drawn:
-
-- **Source**: [bacinger/f1-circuits](https://github.com/bacinger/f1-circuits) —
-  F1 circuit GeoJSON, **MIT** license (© 2019–2025 Tomislav Bacinger).
-  Attribution required if you redistribute the data.
-- **Conversion**: `python3 tools/convert.py` — equirectangular projection to meters,
-  Ramer-Douglas-Peucker simplification at 2 m tolerance, fit into `viewBox 0 0 1000 600`.
-- **Race direction verified** for all 24 GPs (OpenStreetMap oneway tags via
-  `tools/analyze.py` + Wikipedia/StatsF1/F1DB entries; documented in `tools/overrides.json`).
-- **Start/finish**: OSM `raceway=start-finish` node where mapped (Monaco, exact);
-  otherwise dataset index 0 (verified <50 m from the S/F node at Melbourne and Austin).
-- The `FALLBACK_CIRCUITS` array in `js/app.js` is an auto-generated mirror
-  (`tools/fallback_circuits.js`) so the app also works from `file://`.
-
-## 6. Third-party assets (personal use — see credits.html)
-
-- Driver portraits in `assets/drivers/` — © Sky Italia / Sky Sport.
-- Team car photos in `assets/cars/` — © Formula One (formula1.com).
-- Team radio MP3s in `assets/radio/` — © Formula One (via Formula Dream archive).
-- “Formula1 Display” and “FerrariSans” typefaces are proprietary and **not** bundled;
-  the UI falls back to Titillium Web + Barlow Condensed (see `fonts/README.md`).
-
-⚠️ Committing these to a **public** repo carries takedown risk. If in doubt, delete
-`assets/radio/*.mp3` before pushing — the app falls back to synthesized beeps.
-
-## 7. Your TODOs before going public
-
-1. **Licensed fonts** (see `fonts/README.md`):
-   - `Formula1-Display-Regular.woff2` + `Formula1-Display-Bold.woff2` (f1experiences.com font — proprietary, paid)
-   - `FerrariSans-Regular.woff2` + `FerrariSans-Medium.woff2` (ferrari.com font — proprietary, not public; Barlow Condensed fallback is fine)
-2. **Replace placeholders** (required by GDPR Art. 13):
-   `[YOUR NAME]` and `[YOUR EMAIL]` in `privacy.html`, `terms.html`, `credits.html`, `LICENSE`
-3. **2026 contents**: update `data/drivers.json` once the final line-up is set;
-   upstream already has Madrid (`es-2026.geojson`) if you want to add it:
-   download into `vendor/geojson/madrid.geojson`, add the id in
-   `tools/convert.py` + one row in `data/circuits.json`, then re-run the conversion.
+App source code: MIT (see `LICENSE`). Third-party assets listed above are excluded.
