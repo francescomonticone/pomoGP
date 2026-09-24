@@ -13,7 +13,14 @@
   "startRadio": [
    "assets/radio/leclerc-start.mp3",
    "assets/radio/leclerc-start2.mp3",
-   "assets/radio/leclerc-start3.mp3"
+   "assets/radio/leclerc-start3.mp3",
+   "assets/radio/leclerc-start4.mp3",
+   "assets/radio/leclerc-start5.mp3",
+   "assets/radio/leclerc-start6.mp3",
+   "assets/radio/leclerc-start7.mp3",
+   "assets/radio/leclerc-start8.mp3",
+   "assets/radio/leclerc-start9.mp3",
+   "assets/radio/leclerc-start10.mp3"
   ],
   "finishRadio": "assets/radio/leclerc-finish.mp3"
  },

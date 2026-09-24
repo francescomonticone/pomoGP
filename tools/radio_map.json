@@ -103,24 +103,73 @@
   "starts": [
    {
     "file": "leclerc-start.mp3",
-    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Italian%20Grand%20Prix/Race/CHALEC01_16_20250907_155126.mp3",
+    "src": "assets/radio/leclerc-start.mp3",
     "clip": "2025__Italian_Grand_Prix__Race__CHALEC01_16_20250907_155126",
     "snippet": "We can discuss it later.",
     "duration": 9.6
    },
    {
     "file": "leclerc-start2.mp3",
-    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Dutch%20Grand%20Prix/Race/CHALEC01_16_20250831_154744.mp3",
-    "clip": "2025__Dutch_Grand_Prix__Race__CHALEC01_16_20250831_154744",
-    "snippet": "Yeah, Trump said he doesn't, he doesn't want, he doesn't like the space, so he cannot complain.",
-    "duration": 9
+    "src": "assets/radio/leclerc-start2.mp3",
+    "clip": "2025__Sa_o_Paulo_Grand_Prix__Sprint_Qualifying__CHALEC01_16_20251107_160101",
+    "snippet": "All right, let's do it.",
+    "duration": 5.6
    },
    {
     "file": "leclerc-start3.mp3",
-    "src": "https://d1bntksftjpew6.cloudfront.net/v1/audio/2025/Qatar%20Grand%20Prix/Race/CHALEC01_16_20251130_194927.mp3",
-    "clip": "2025__Qatar_Grand_Prix__Race__CHALEC01_16_20251130_194927",
-    "snippet": "Check every lap line in the planetary. I'm sure he's out.",
-    "duration": 8.9
+    "src": "assets/radio/leclerc-start3.mp3",
+    "clip": "2025__Italian_Grand_Prix__Race__CHALEC01_16_20250907_152442",
+    "snippet": "This is good. Nice and clean.",
+    "duration": 5.7
+   },
+   {
+    "file": "leclerc-start4.mp3",
+    "src": "assets/radio/leclerc-start4.mp3",
+    "clip": "2025__Italian_Grand_Prix__Practice_2__CHALEC01_16_20250905_173228",
+    "snippet": "Yeah, no worries, that's all. Thank you, see you around.",
+    "duration": 7.4
+   },
+   {
+    "file": "leclerc-start5.mp3",
+    "src": "assets/radio/leclerc-start5.mp3",
+    "clip": "2025__Dutch_Grand_Prix__Practice_1__CHALEC01_16_20250829_131201",
+    "snippet": "My opinion is that we should focus about what we are doing now. We are miles off. Like, miles off.",
+    "duration": 13
+   },
+   {
+    "file": "leclerc-start6.mp3",
+    "src": "assets/radio/leclerc-start6.mp3",
+    "clip": "2026__Monaco_Grand_Prix__Qualifying__LEC_16_20260606_164606",
+    "snippet": "I'm supposed to be pushing, but we need to be clear on the driver, I push, or I don't.",
+    "duration": 6.4
+   },
+   {
+    "file": "leclerc-start7.mp3",
+    "src": "assets/radio/leclerc-start7.mp3",
+    "clip": "2025__Mexico_City_Grand_Prix__Race__CHALEC01_16_20251026_151343",
+    "snippet": "This is my place, my boy. Fine. This is... We're staying out to the end.",
+    "duration": 7.7
+   },
+   {
+    "file": "leclerc-start8.mp3",
+    "src": "assets/radio/leclerc-start8.mp3",
+    "clip": "2025__Dutch_Grand_Prix__Qualifying__CHALEC01_16_20250830_152641",
+    "snippet": "There was a fox and three of them, and I think he's taking the exit road now. Okay.",
+    "duration": 10.4
+   },
+   {
+    "file": "leclerc-start9.mp3",
+    "src": "assets/radio/leclerc-start9.mp3",
+    "clip": "2025__Italian_Grand_Prix__Race__CHALEC01_16_20250907_164123",
+    "snippet": "Good job, I'm so excited to see how it goes on the next one, but thanks to all the fans for the push like they always have, and we'll see you on the next one! Thanks to you, we keep pushing!",
+    "duration": 21.9
+   },
+   {
+    "file": "leclerc-start10.mp3",
+    "src": "assets/radio/leclerc-start10.mp3",
+    "clip": "2026__Barcelona_Grand_Prix__Race__LEC_16_20260614_152415",
+    "snippet": "And Fox Charles Fox, we have the gap to cover Piasco We don't care about Piasco, let's look for the head before the face Ok, let me know on flat, we stay out this lap then, stay out this lap",
+    "duration": 13
    }
   ]
  },
