@@ -6,6 +6,7 @@ L'app usa ESATTAMENTE due famiglie, verificate sui siti ufficiali:
 |-----|-------------|-------|
 | Timer, pulsanti, etichette, testi | **Formula1 Display** (Regular 400, Bold 700) — il font di f1experiences.com / formula1.com | Font proprietario F1 (Marc Rouault). Licenza a pagamento, non ridistribuibile. |
 | Titoli, nome pilota, wordmark PomoGP | **FerrariSans** (Regular 400, Medium 500) — il font di ferrari.com | Font proprietario Ferrari. Licenza interna, non ridistribuibile. |
+| Sottotitoli live team radio | **Magistral ExtraBold Italic** — il display di formuladream.app | Font commerciale (ParaType & co.). Da acquistare, non ridistribuibile. |
 
 ## File attesi (woff2, `font-display: swap` già configurato in `css/styles.css`)
 
@@ -14,7 +15,9 @@ fonts/
   Formula1-Display-Regular.woff2  → @font-face 'Formula1 Display' 400
   Formula1-Display-Bold.woff2     → @font-face 'Formula1 Display' 700
   FerrariSans-Regular.woff2       → @font-face 'FerrariSans' 400
+
   FerrariSans-Medium.woff2        → @font-face 'FerrariSans' 500
+  Magistral-ExtraBoldItalic.woff2 → @font-face 'Magistral' 800 italic (sottotitoli live)
 ```
 
 ## Dove procurarli (a cura tua — NON committarli se la licenza lo vieta)

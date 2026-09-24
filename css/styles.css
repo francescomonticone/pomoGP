@@ -25,6 +25,13 @@
   src: url('../fonts/FerrariSans-Medium.woff2') format('woff2');
   font-weight: 500; font-style: normal; font-display: swap;
 }
+/* Display font dei sottotitoli live (come su formuladream.app): Magistral ExtraBold
+   Italic, commerciale (vedi fonts/README.md). Fallback: Titillium Web Black Italic. */
+@font-face {
+  font-family: 'Magistral';
+  src: url('../fonts/Magistral-ExtraBoldItalic.woff2') format('woff2');
+  font-weight: 800; font-style: italic; font-display: swap;
+}
 
 :root {
   --f1-red: #E10600;
@@ -446,7 +453,7 @@ dialog::backdrop { background: rgba(0,0,0,.85); backdrop-filter: blur(8px); }
 .radio-card.playing .eq i:nth-child(4) { animation-duration: .9s; animation-delay: .1s; }
 .radio-card.playing .eq i:nth-child(5) { animation-duration: .7s; animation-delay: .3s; }
 @keyframes eqwave { 0%, 100% { height: 4px; } 50% { height: 15px; } }
-.radio-subs { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--graphite); font-family: var(--font-ferrari); font-style: italic; font-size: clamp(19px, 2.2vw, 25px); font-weight: 500; letter-spacing: .04em; text-transform: uppercase; line-height: 1.5; min-height: 64px; }
+.radio-subs { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--graphite); font-family: 'Magistral', 'Titillium Web', 'Barlow Condensed', system-ui, sans-serif; font-style: italic; font-size: clamp(19px, 2.2vw, 25px); font-weight: 900; letter-spacing: .02em; text-transform: uppercase; line-height: 1.5; min-height: 64px; }
 .radio-subs .w { display: inline-block; margin-right: .35em; transition: color 150ms, text-shadow 150ms; }
 .w-next { color: rgba(225,6,0,.30); }
 .w-on { color: var(--f1-red); text-shadow: 0 0 18px var(--f1-red), 0 0 35px rgba(225,6,0,.45); }

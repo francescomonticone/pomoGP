@@ -1,0 +1,19 @@
+{
+  "_note": "Manual corrections for auto-transcript errors (Formula Dream STT). Applied by tools/transcripts.py on every run, so re-downloads keep them.",
+  "replace": {
+    "clerk": "Leclerc",
+    "sonoda": "Tsunoda",
+    "hajar": "Hadjar",
+    "isaac": "Isack",
+    "albin": "Albon",
+    "sock": "SOC",
+    "skim": "skimmed",
+    "wool": "wall",
+    "drill": "dial",
+    "holly": "Ollie",
+    "cargo": "carcass",
+    "trump": "team"
+  },
+  "drop": ["bmig3"],
+  "merge_leading_dot": true
+}

@@ -31,6 +31,45 @@ def build_index():
                 idx[c["clipId"]] = c["transcript"]
     return idx
 
+def apply_fixes(path):
+    """Applica tools/transcript_fixes.json a un transcript salvato."""
+    try:
+        fixes = json.load(open(os.path.join(BASE, "tools", "transcript_fixes.json")))
+    except Exception:
+        return False
+    d = json.load(open(path))
+    words = d.get("words") or []
+    repl = {k.lower(): v for k, v in (fixes.get("replace") or {}).items()}
+    drop = {t.lower() for t in (fixes.get("drop") or [])}
+    out = []
+    changed = False
+    for w in words:
+        t = w.get("w", "")
+        core = t.strip().strip(".,!?;:\"").lower()
+        if core in drop:
+            changed = True
+            continue
+        if core in repl:
+            rep = repl[core]
+            if t[:1].isupper():
+                rep = rep[:1].upper() + rep[1:]
+            # riattacca la punteggiatura originale
+            pre = t[:len(t) - len(t.lstrip(".,!?;:\""))]
+            post = t[len(t.rstrip(".,!?;:\"")):]
+            w["w"] = pre + rep + post
+            changed = True
+        # fonde frammenti tipo ".9" nella parola precedente ("20" + ".9" -> "20.9")
+        if fixes.get("merge_leading_dot") and t.startswith(".") and len(t) <= 4 and out:
+            out[-1]["w"] += t
+            out[-1]["e"] = w.get("e", out[-1].get("e"))
+            changed = True
+            continue
+        out.append(w)
+    if changed:
+        d["words"] = out
+        json.dump(d, open(path, "w"))
+    return changed
+
 def main():
     idx = build_index()
     print("clip indicizzate:", len(idx))
@@ -75,6 +114,7 @@ def main():
                 ],
             }
             json.dump(slim, open(dest, "w"))
+            apply_fixes(dest)
             ok += 1
             print(f"{base}: {len(slim['words'])} parole", flush=True)
         except Exception as e:
@@ -82,6 +122,10 @@ def main():
             fail += 1
         time.sleep(0.5)
     print(f"fatto: {ok} nuovi, {skip} esistenti, {fail} falliti")
+    # passo correzioni anche sui file gia' esistenti
+    import glob as _glob
+    fixed = sum(1 for f in _glob.glob(os.path.join(outdir, "*.json")) if apply_fixes(f))
+    print(f"correzioni applicate a {fixed} transcript")
 
 if __name__ == "__main__":
     main()
