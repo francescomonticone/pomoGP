@@ -79,6 +79,12 @@ const TEAM_CARS = {
 };
 /* Last start jingle played (rotation never repeats it twice in a row) */
 let lastStartSrc = null;
+/* Subtitle engine state (declared before boot() runs) */
+let subWords = [];
+let subSpans = [];
+let subIdx = 0;
+let subRaf = 0;
+const transcriptCache = {};
 const STEP_TITLES = {
   1: ['Step 1 of 3 · Team', 'Select your team'],
   2: ['Step 2 of 3 · Driver', 'Select your driver'],
@@ -100,7 +106,9 @@ const ui = {};
   'car-prev','car-next','compound-grid','custom-fields','sw-cfocus','sw-cshort','sw-clong',
   'sw-laps','sw-short','sw-long','session-target-desc',
   'lights-overlay','lights-row','lights-heading','lights-counter','lights-banner',
-  'btn-lights-skip','btn-lights-abort','trigger-lights-btn'
+  'btn-lights-skip','btn-lights-abort','trigger-lights-btn',
+  'radio-card','radio-code','radio-driver','radio-dot','radio-team',
+  'radio-replay','radio-subs'
 ].forEach((id) => { ui[camel(id)] = $(id); });
 function camel(id) { return id.replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase()); }
 
@@ -213,7 +221,7 @@ function paintPhase() {
   ui.pitStopOverlay.hidden = !pit;
   ui.statDelta.textContent = pit ? 'Pit lane' : 'Green track';
   ui.statDelta.className = pit ? 'status-pit' : 'status-ok';
-  ui.sessionTargetDesc.textContent = pit ? 'Target: recupera, idratati, respira' : 'Target: massima concentrazione in pista';
+  ui.sessionTargetDesc.textContent = pit ? 'Target: recover, hydrate, breathe' : 'Target: maximum concentration on track';
   // in pit il tracciato resta spento: solo base bianca (impostato una volta sola, non per frame)
   ui.trackProgress.style.opacity = pit ? '0.15' : '1';
   ui.trackGlow.style.opacity = pit ? '0' : '0.22';
@@ -622,6 +630,24 @@ function stopPitRadio() {
     if (radioAudio) { radioAudio.pause(); radioAudio.currentTime = 0; }
   } catch {}
   radioAudio = null;
+  stopSubtitles();
+  setRadioIdle();
+}
+function setRadioIdle() {
+  ui.radioCard.classList.remove('playing');
+  ui.radioCode.textContent = '—';
+  ui.radioCode.style.color = '';
+  ui.radioDriver.textContent = 'Standby';
+  ui.radioDot.style.background = '';
+  ui.radioTeam.textContent = 'Radio silent';
+  ui.radioSubs.innerHTML = '<span class="w-idle">Standby for live comms…</span>';
+}
+function setRadioHeader(d) {
+  ui.radioCode.textContent = d ? d.number : '—';
+  ui.radioCode.style.color = d ? d.color : '';
+  ui.radioDriver.textContent = d ? d.name : 'Standby';
+  ui.radioDot.style.background = d ? d.color : '';
+  ui.radioTeam.textContent = d ? `${d.team} · live` : 'Radio silent';
 }
 function playPitRadio() {
   stopPitRadio();
@@ -649,16 +675,103 @@ function pickStartClip(d) {
 }
 function playFile(src) {
   if (!src) return false;
+  setRadioHeader(driver());
   try {
     radioAudio = new Audio(src);
     radioAudio.volume = 0.9;
+    radioAudio.addEventListener('play', () => ui.radioCard.classList.add('playing'));
+    const hlOff = () => { ui.radioCard.classList.remove('playing'); stopSubLoop(); };
+    radioAudio.addEventListener('pause', hlOff);
+    radioAudio.addEventListener('ended', () => {
+      ui.radioCard.classList.remove('playing');
+      stopSubLoop();
+      if (subSpans.length) paintSub(subSpans.length); // all done
+    });
     const p = radioAudio.play();
     if (p && typeof p.catch === 'function') p.catch(() => { radioAudio = null; });
+    loadSubsFor(src);
+    startSubLoop();
     return true;
   } catch {
     radioAudio = null;
     return false;
   }
+}
+/* Subtitles: fetch matching transcript (assets/radio/X.mp3 <-> data/transcripts/X.json) */
+async function loadSubsFor(src) {
+  const base = String(src.split('/').pop() || '').replace(/\.mp3$/i, '');
+  if (!base) return;
+  try {
+    let data = transcriptCache[base];
+    if (!data) {
+      const r = await fetch(`./data/transcripts/${base}.json`);
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json();
+      transcriptCache[base] = data;
+    }
+    // A newer audio may have started while fetching
+    if (!radioAudio || !String(radioAudio.src).endsWith(`${base}.mp3`)) return;
+    subWords = Array.isArray(data.words) ? data.words : [];
+    subSpans = [];
+    subIdx = 0;
+    ui.radioSubs.innerHTML = '';
+    subWords.forEach((w) => {
+      const s = document.createElement('span');
+      s.className = 'w w-next';
+      s.textContent = w.w;
+      ui.radioSubs.append(s);
+      subSpans.push(s);
+    });
+    if (radioAudio) paintSub(indexForTime(radioAudio.currentTime || 0));
+  } catch {
+    /* file:// or missing transcript: header + audio still work */
+  }
+}
+function indexForTime(t) {
+  let idx = -1;
+  for (let i = 0; i < subWords.length; i++) {
+    if ((subWords[i].s || 0) <= t) idx = i;
+    else break;
+  }
+  return idx;
+}
+function paintSub(idx) {
+  subIdx = idx;
+  subSpans.forEach((s, i) => {
+    s.className = 'w ' + (i < idx ? 'w-done' : i === idx ? 'w-on' : 'w-next');
+  });
+}
+function startSubLoop() {
+  stopSubLoop();
+  subRaf = requestAnimationFrame(subLoop);
+}
+function stopSubLoop() {
+  if (subRaf) cancelAnimationFrame(subRaf);
+  subRaf = 0;
+}
+function subLoop() {
+  subRaf = 0;
+  if (!radioAudio) return; // pause/ended/stop kill the loop via listeners
+  if (subSpans.length) {
+    const t = radioAudio.currentTime || 0;
+    const first = subWords.length ? (subWords[0].s || 0) : 0;
+    let idx;
+    if (t < first) idx = -1;
+    else {
+      idx = subIdx < -1 ? -1 : subIdx;
+      if (idx >= subWords.length) idx = subWords.length - 1;
+      if (idx >= 0 && t < (subWords[idx].s || 0)) idx = indexForTime(t); // seek back
+      while (idx + 1 < subWords.length && (subWords[idx + 1].s || 0) <= t) idx++;
+    }
+    if (idx !== subIdx) paintSub(idx);
+  }
+  subRaf = requestAnimationFrame(subLoop);
+}
+function stopSubtitles() {
+  stopSubLoop();
+  subWords = [];
+  subSpans = [];
+  subIdx = -1;
 }
 
 /* ---------- Notifiche / annunci ---------- */
@@ -814,6 +927,16 @@ function bindEvents() {
   ui.triggerLightsBtn.addEventListener('click', () => {
     if (!running && phase === 'FOCUS' && remainingMs === durationMs) openLights();
   });
+  ui.radioReplay.addEventListener('click', () => {
+    if (!radioAudio) return;
+    try {
+      radioAudio.currentTime = 0;
+      paintSub(-1);
+      const p = radioAudio.play();
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+      startSubLoop();
+    } catch {}
+  });
   ui.btnLightsSkip.addEventListener('click', () => { if (lightsActive) lightsOut(); });
   ui.btnLightsAbort.addEventListener('click', () => closeLights());
 
@@ -831,7 +954,7 @@ function bindEvents() {
     else if (e.key === 's' || e.key === 'S') skip();
   });
 
-  // Ricalcolo preciso al rientro sul tab (rAF in background si ferma: il timestamp recupera)
+  // Precise recalculation when returning to the tab (rAF stops in background: timestamps recover)
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden && running) paintTime(Math.max(0, endAt - performance.now()));
   });
