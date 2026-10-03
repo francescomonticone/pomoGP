@@ -7,6 +7,8 @@ fills up in red under you.
 
 🌐 **Live:** https://francescomonticone.github.io/pomoGP/
 
+<img width="1909" height="938" alt="image" src="https://github.com/user-attachments/assets/def6aa7d-cdee-4af1-9cd8-95de63920635" />
+
 ## How it works
 
 1. **Setup** — choose your team (with its 2026 car), your driver (photo gallery)
