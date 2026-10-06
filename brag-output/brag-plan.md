@@ -41,9 +41,9 @@ PomoGP: an F1 Pomodoro timer with real circuits, start lights and original team 
 
 ## Audio direction
 - Role: cinematic support — driving bed under everything, real team-radio clips as featured moments
-- Music: happy-beats-business-moves-vol-10 (110 BPM, 60s, excerpt 0–20s, climax 18–20s under P1)
+- Music: happy-beats-business-moves-vol-12 (110 BPM, builds -20 to -15dB over 0–25s, excerpt 0–20s, climax at P1)
 - Music treatment: full energy from 0, duck slightly under radio moments, hard end at 20s
-- Music cue guidance: preset read; strong cues 18.01/18.55/20.19 — P1 reveal locked near 18.55; beat grid ~0.55s for sequential card arrivals (every other beat for readability)
+- Music cue guidance: preset read; strong cues 18.01/18.55/20.19 — P1 reveal beat-locked 18.56 (vol-12 strong cue); beat grid ~0.55s for sequential card arrivals (every other beat for readability)
 - Audio-reactive treatment: subtle — track glow and title presence breathe with energy
 - SFX posture: sparse, professional — 5 light beeps, 1 lights-out hit, 2 real radio clips (start jingle + "Box, box!")
 - Audio-coupled moments:
@@ -55,7 +55,7 @@ PomoGP: an F1 Pomodoro timer with real circuits, start lights and original team 
 
 ## Storyboard
 
-### Scene 1 — Lights out hook — 3s (0–3)
+### Scene 1 — Lights out hook — 4.2s (0–4.2, hook holds ~1.5s settled)
 Black void. Five red dots appear one by one (0.3/0.85/1.4/1.95/2.5s) with beeps. "LIGHTS OUT." slams in, then "Train your focus like a race weekend." holds.
 Sequential/interaction: yes — 5 dots sequential.
 Audio intent: rising tension, beeps then silence before music drops.
@@ -63,7 +63,7 @@ Audio-coupled idea: beep per dot.
 Music: vol10 from 0s, full.
 Transition mood: hard cut → Scene 2
 
-### Scene 2 — Setup flow — 5s (3–8)
+### Scene 2 — Setup flow — 4.8s (4.2–9, cards on beat grid 4.9/6.0/7.1)
 Three cards arrive one by one on beat grid (~3.6/4.7/5.8s): Ferrari team card with car, Leclerc 16 driver slide, SOFT tyre card ("15 min focus"). Label above: "Pick your team. Pick your driver. Pick your tyre."
 Sequential/interaction: yes — 3 cards sequential with soft ticks.
 Audio intent: confident, building.
@@ -71,7 +71,7 @@ Audio-coupled idea: card-by-card arrival ticks.
 Music: bed continues.
 Transition mood: clean wipe → Scene 3
 
-### Scene 3 — Focus lap — 6s (8–14)
+### Scene 3 — Focus lap — 5.2s (9–14.2)
 Giant "25:00" counting down fast (time-lapse feel), Monza outline filling red left-to-right, car dot running, S1/S2/S3 badges lighting. Caption: "Focus. The track keeps score."
 Sequential/interaction: none (continuous motion).
 Audio intent: drive and momentum.
@@ -79,7 +79,7 @@ Audio-coupled idea: leclerc start jingle ("All right, let's do it.") under the m
 Music: bed continues.
 Transition mood: dramatic wipe → Scene 4
 
-### Scene 4 — Pit radio — 3.5s (14–17.5)
+### Scene 4 — Pit radio — 3.4s (14.2–17.6, words 16.49/17.03/17.21)
 Yellow "PIT LANE ACTIVE" flag, subtitle panel karaoke: "BOX, BOX, BOX." word by word with equalizer bars. Real hamilton.mp3 plays.
 Sequential/interaction: yes — 3 words light sequentially.
 Audio intent: the human moment, voices front and center (music ducks).
@@ -87,7 +87,7 @@ Audio-coupled idea: word-by-word lighting synced to the real clip.
 Music: ducked under radio.
 Transition mood: hard cut → Scene 5
 
-### Scene 5 — P1 outro — 2.5s (17.5–20)
+### Scene 5 — P1 outro — 2.4s (17.6–20, P1 beat-locked 18.56)
 Checkered band. "P1 · SESSION COMPLETE" lands on the 18.55 strong cue. URL below. Celebration clip tail.
 Sequential/interaction: none.
 Audio intent: payoff, then hard stop at 20s.
