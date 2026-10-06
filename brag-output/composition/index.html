@@ -52,9 +52,12 @@
   .eq { display: flex; gap: 10px; align-items: flex-end; height: 60px; margin-top: 36px; }
   .eq i { width: 12px; height: 12px; background: #E10600; }
   /* S5 */
-  .checker { width: 420px; height: 130px; background: repeating-conic-gradient(#fff 0% 25%, #111 0% 50%) 50% / 52px 52px; border: 6px solid #fff; }
-  .p1 { margin-top: 40px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 150px; color: #E10600; letter-spacing: .04em; }
-  .url { margin-top: 18px; font-size: 44px; letter-spacing: .12em; color: #fff; }
+  .checker { width: 340px; height: 104px; background: repeating-conic-gradient(#fff 0% 25%, #111 0% 50%) 50% / 42px 42px; border: 6px solid #fff; }
+  .p1 { margin-top: 28px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 118px; color: #E10600; letter-spacing: .04em; line-height: 1; }
+  .brand { margin-top: 22px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 110px; letter-spacing: .06em; line-height: 1; }
+  .brand::first-letter { color: #E10600; }
+  .slogan { margin-top: 10px; font-size: 40px; letter-spacing: .22em; color: #A7A7B3; text-transform: uppercase; }
+  .url { margin-top: 16px; font-size: 38px; letter-spacing: .12em; color: #fff; }
 </style>
 </head>
 <body>
@@ -72,7 +75,7 @@
 
   <!-- S2 setup 3-8 -->
   <div class="scene" id="s2">
-    <div class="s2label">Pick your team. Pick your driver. Pick your poison.</div>
+    <div class="s2label">Pick your team. Pick your driver. Pick your tyre.</div>
     <div class="cards">
       <div class="card" id="c1"><div class="stripe"></div><div class="t">Scuderia Ferrari</div><div class="n">16 · Leclerc</div><div class="s">2 drivers</div></div>
       <div class="card" id="c2"><div class="t">McLaren · Papaya</div><div class="n">4 · Norris</div><div class="s">World champion</div></div>
@@ -111,6 +114,8 @@
   <div class="scene" id="s5">
     <div class="checker" id="checker"></div>
     <div class="p1" id="p1">P1 · Session complete</div>
+    <div class="brand" id="brand">PomoGP</div>
+    <div class="slogan" id="slogan">Focus is a race. Win it.</div>
     <div class="url" id="p1url">francescomonticone.github.io/pomoGP</div>
   </div>
 
@@ -188,7 +193,9 @@
   tl.set('#s5', { opacity: 1 }, 17.5);
   tl.fromTo('#checker', { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: 'power3.out' }, 17.6);
   tl.fromTo('#p1', { scale: 1.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: 'power4.in' }, 18.55);
-  tl.fromTo('#p1url', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4 }, 19.0);
+  tl.fromTo('#brand', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35 }, 19.0);
+  tl.fromTo('#slogan', { opacity: 0 }, { opacity: 1, duration: 0.3 }, 19.15);
+  tl.fromTo('#p1url', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4 }, 19.3);
   tl.set({}, {}, 20);
   paintTrack();
   window.__timelines['main'] = tl;

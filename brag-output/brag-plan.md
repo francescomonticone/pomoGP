@@ -64,7 +64,7 @@ Music: vol10 from 0s, full.
 Transition mood: hard cut → Scene 2
 
 ### Scene 2 — Setup flow — 5s (3–8)
-Three cards arrive one by one on beat grid (~3.6/4.7/5.8s): Ferrari team card with car, Leclerc 16 driver slide, SOFT tyre card ("15 min focus"). Label above: "Pick your team. Pick your driver. Pick your poison."
+Three cards arrive one by one on beat grid (~3.6/4.7/5.8s): Ferrari team card with car, Leclerc 16 driver slide, SOFT tyre card ("15 min focus"). Label above: "Pick your team. Pick your driver. Pick your tyre."
 Sequential/interaction: yes — 3 cards sequential with soft ticks.
 Audio intent: confident, building.
 Audio-coupled idea: card-by-card arrival ticks.
