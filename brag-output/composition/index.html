@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="./assets/gsap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,700;1,900&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0B0B0F; }
+  #root { position: relative; width: 100%; height: 100%; font-family: 'Titillium Web', system-ui, sans-serif; color: #fff; }
+  .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+  .disp { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+  .kick { font-style: italic; font-weight: 900; }
+  .grid-bg {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  /* S1 */
+  .dots { display: flex; gap: 26px; margin-bottom: 40px; }
+  .dot { width: 54px; height: 54px; border-radius: 50%; background: #301010; border: 3px solid #282834; }
+  .dot.lit { background: #E10600; box-shadow: 0 0 40px #E10600, 0 0 90px rgba(225,6,0,.7); border-color: #E10600; }
+  .hook-main { font-size: 150px; letter-spacing: .04em; line-height: 1; }
+  .hook-sub { margin-top: 26px; font-size: 44px; letter-spacing: .14em; color: #A7A7B3; }
+  .hook-sub b { color: #fff; }
+  /* S2 */
+  .cards { display: flex; gap: 40px; }
+  .card { width: 460px; background: #121217; border: 2px solid #2c2c3a; padding: 34px; }
+  .card.hero { border-color: #E10600; }
+  .card .t { font-size: 30px; letter-spacing: .2em; color: #A7A7B3; text-transform: uppercase; }
+  .card .n { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 84px; line-height: 1; margin: 8px 0; }
+  .card .s { font-size: 34px; letter-spacing: .1em; text-transform: uppercase; }
+  .stripe { width: 10px; height: 64px; background: #E10600; margin-bottom: 14px; }
+  .tyre { width: 120px; height: 120px; border-radius: 50%; border: 14px solid #E8002D; background: #141419; margin: 6px auto 10px; }
+  .s2label { font-size: 40px; letter-spacing: .18em; color: #A7A7B3; text-transform: uppercase; margin-bottom: 44px; }
+  /* S3 */
+  .count { font-family: 'Barlow Condensed'; font-weight: 900; font-size: 300px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .trackwrap { width: 1200px; margin-top: 10px; }
+  .sectors { display: flex; gap: 14px; margin-top: 26px; }
+  .sec { font-size: 30px; font-weight: 700; padding: 8px 26px; background: #202028; color: #A7A7B3; }
+  .sec.lit { background: #00E700; color: #000; }
+  .s3cap { margin-top: 30px; font-size: 40px; letter-spacing: .2em; color: #A7A7B3; text-transform: uppercase; }
+  /* S4 */
+  .pitflag { background: #FFF500; color: #000; font-weight: 700; font-size: 34px; letter-spacing: .16em; padding: 12px 34px; text-transform: uppercase; }
+  .kara { margin-top: 44px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 130px; text-transform: uppercase; }
+  .kara .w { color: rgba(225,6,0,.28); margin: 0 18px; }
+  .kara .w.on { color: #E10600; text-shadow: 0 0 30px #E10600, 0 0 70px rgba(225,6,0,.5); }
+  .eq { display: flex; gap: 10px; align-items: flex-end; height: 60px; margin-top: 36px; }
+  .eq i { width: 12px; height: 12px; background: #E10600; }
+  /* S5 */
+  .checker { width: 420px; height: 130px; background: repeating-conic-gradient(#fff 0% 25%, #111 0% 50%) 50% / 52px 52px; border: 6px solid #fff; }
+  .p1 { margin-top: 40px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 900; font-size: 150px; color: #E10600; letter-spacing: .04em; }
+  .url { margin-top: 18px; font-size: 44px; letter-spacing: .12em; color: #fff; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="20" data-width="1920" data-height="1080">
+  <div class="grid-bg"></div>
+
+  <!-- S1 hook 0-3 -->
+  <div class="scene" id="s1">
+    <div class="dots">
+      <div class="dot" id="d1"></div><div class="dot" id="d2"></div><div class="dot" id="d3"></div><div class="dot" id="d4"></div><div class="dot" id="d5"></div>
+    </div>
+    <div class="disp kick hook-main" id="hookmain">Lights out.</div>
+    <div class="hook-sub" id="hooksub">Train your <b>focus</b> like a race weekend.</div>
+  </div>
+
+  <!-- S2 setup 3-8 -->
+  <div class="scene" id="s2">
+    <div class="s2label">Pick your team. Pick your driver. Pick your poison.</div>
+    <div class="cards">
+      <div class="card" id="c1"><div class="stripe"></div><div class="t">Scuderia Ferrari</div><div class="n">16 · Leclerc</div><div class="s">2 drivers</div></div>
+      <div class="card" id="c2"><div class="t">McLaren · Papaya</div><div class="n">4 · Norris</div><div class="s">World champion</div></div>
+      <div class="card hero" id="c3"><div class="tyre"></div><div class="t" style="text-align:center">Soft · S</div><div class="s" style="text-align:center">15 min focus</div></div>
+    </div>
+  </div>
+
+  <!-- S3 focus 8-14 -->
+  <div class="scene" id="s3">
+    <div style="position:relative; height:320px; width:900px; text-align:center;">
+      <div class="count" id="t1" style="position:absolute; inset:0;">25:00</div>
+      <div class="count" id="t2" style="position:absolute; inset:0; opacity:0;">18:32</div>
+      <div class="count" id="t3" style="position:absolute; inset:0; opacity:0;">09:41</div>
+      <div class="count" id="t4" style="position:absolute; inset:0; opacity:0; color:#E10600;">00:00</div>
+    </div>
+    <div class="trackwrap">
+      <svg viewBox="0 0 1000 600" width="1200" height="360">
+        <path id="trk-base" d="M 374.5 362.2 L 385.8 233.1 L 386.2 231.5 L 387.3 230.6 L 393.4 230.6 L 395.4 227.7 L 389.8 205.8 L 389.1 200.2 L 388.8 195.1 L 391.2 162.4 L 393 153.8 L 398.7 139.9 L 402 134.7 L 410.1 125.5 L 420.7 117.1 L 426.7 113.7 L 433.5 110.3 L 447.8 105.9 L 456.2 104.5 L 498.6 100.8 L 542.3 98.1 L 544.7 98 L 547 98.3 L 549.2 100.4 L 573.4 149.1 L 577.1 153.4 L 581.6 156.7 L 623.9 177.3 L 651.9 190.4 L 655.9 193 L 658.3 197.2 L 657.6 201.6 L 656.2 203.6 L 606.9 237.2 L 602.4 239.4 L 591.2 241.5 L 584 243.8 L 579.4 247.6 L 578.2 252.3 L 586.8 281.2 L 588.4 282.7 L 590.2 282.9 L 607.3 280.8 L 614.6 280.5 L 620.7 281.5 L 626.7 283.8 L 640 294.6 L 646.9 302.7 L 648.5 307.7 L 648 312.7 L 646.3 316.6 L 629.6 331.4 L 627.4 334.4 L 621.8 353.2 L 620.2 372.3 L 620.7 377.9 L 622.8 381.9 L 626.9 385.3 L 633.2 386.4 L 639.4 386.6 L 645.6 385.3 L 653.1 382.3 L 660.9 378.3 L 668.8 373.4 L 673.9 369.2 L 686.4 357.6 L 706.5 341.4 L 718.4 333.9 L 725.8 331.6 L 731.3 332.2 L 736.1 335.2 L 742.9 344.9 L 745.6 352.1 L 745.9 360.1 L 201.1 512.9 L 197.3 514.2 L 192.8 514.6 L 188.9 513.3 L 187.2 510.2 L 186.8 503.5 L 196.2 380.8 L 374.5 362.2 Z" stroke="#ffffff" opacity="0.3" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="trk-glow" d="" stroke="#E10600" opacity="0.22" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="trk-prog" d="" stroke="#E10600" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="trk-car"><circle r="13" fill="#E10600" opacity="0.35"/><circle class="cardot" r="8" fill="#fff" stroke="#E10600" stroke-width="4"/></g>
+      </svg>
+    </div>
+    <div class="sectors"><div class="sec" id="sec1">S1</div><div class="sec" id="sec2">S2</div><div class="sec" id="sec3">S3</div></div>
+    <div class="s3cap">Focus. The track keeps score.</div>
+  </div>
+
+  <!-- S4 pit radio 14-17.5 -->
+  <div class="scene" id="s4">
+    <div class="pitflag">Pit lane active · box box</div>
+    <div class="kara"><span class="w" id="k1">Box,</span><span class="w" id="k2">box,</span><span class="w" id="k3">box.</span></div>
+    <div class="eq" id="eq"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <!-- S5 outro 17.5-20 -->
+  <div class="scene" id="s5">
+    <div class="checker" id="checker"></div>
+    <div class="p1" id="p1">P1 · Session complete</div>
+    <div class="url" id="p1url">francescomonticone.github.io/pomoGP</div>
+  </div>
+
+  <!-- audio -->
+  <audio id="music" data-start="0" data-duration="20" data-volume="0.55" src="assets/music/vol10.mp3"></audio>
+  <audio id="beep1" data-start="0.3" data-duration="0.2" src="assets/sfx/beep.wav"></audio>
+  <audio id="beep2" data-start="0.85" data-duration="0.2" src="assets/sfx/beep.wav"></audio>
+  <audio id="beep3" data-start="1.4" data-duration="0.2" src="assets/sfx/beep.wav"></audio>
+  <audio id="beep4" data-start="1.95" data-duration="0.2" src="assets/sfx/beep.wav"></audio>
+  <audio id="beep5" data-start="2.5" data-duration="0.2" src="assets/sfx/beep.wav"></audio>
+  <audio id="hit" data-start="2.72" data-duration="0.6" src="assets/sfx/hit.wav"></audio>
+  <audio id="radio-start" data-start="8.2" data-duration="5.6" src="assets/radio/leclerc-start2.mp3"></audio>
+  <audio id="radio-box" data-start="13.8" data-duration="4.0" src="assets/radio/hamilton.mp3"></audio>
+</div>
+<script>
+(function () {
+  var base = document.querySelector('#trk-base').getAttribute('d');
+  document.querySelector('#trk-glow').setAttribute('d', base);
+  var prog = document.querySelector('#trk-prog');
+  prog.setAttribute('d', base);
+  var L = prog.getTotalLength();
+  prog.style.strokeDasharray = L + ' ' + L;
+  var car = document.querySelector('#trk-car');
+  var progState = { p: 0 };
+  function paintTrack() {
+    var v = Math.min(1, Math.max(0, progState.p));
+    prog.style.strokeDashoffset = L * (1 - v);
+    try {
+      var pt = prog.getPointAtLength(L * v);
+      car.setAttribute('transform', 'translate(' + pt.x + ' ' + pt.y + ')');
+    } catch (e) {}
+  }
+  var eqBars = document.querySelectorAll('#eq i');
+  var eqState = { t: 0 };
+  function paintEq() {
+    for (var i = 0; i < eqBars.length; i++) {
+      var h = 12 + Math.abs(Math.sin(eqState.t * 3 + i * 1.3)) * 44;
+      eqBars[i].style.height = h + 'px';
+    }
+  }
+  var tl = gsap.timeline({ paused: true });
+  // S1 0-3
+  tl.set('#s1', { opacity: 1 }, 0);
+  ['#d1', '#d2', '#d3', '#d4', '#d5'].forEach(function (id, i) {
+    tl.set(id, { className: 'dot lit' }, 0.3 + i * 0.55);
+  });
+  tl.fromTo('#hookmain', { scale: 2.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: 'power4.in' }, 2.55);
+  tl.fromTo('#hooksub', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, 2.7);
+  tl.set('#s1', { opacity: 0 }, 3);
+  // S2 3-8
+  tl.set('#s2', { opacity: 1 }, 3);
+  tl.fromTo('#c1', { x: -120, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, 3.6);
+  tl.fromTo('#c2', { x: -120, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, 4.7);
+  tl.fromTo('#c3', { x: -120, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, 5.8);
+  tl.set('#s2', { opacity: 0 }, 8);
+  // S3 8-14
+  tl.set('#s3', { opacity: 1 }, 8);
+  tl.set('#t1', { opacity: 0 }, 9.6); tl.set('#t2', { opacity: 1 }, 9.6);
+  tl.set('#t2', { opacity: 0 }, 11.4); tl.set('#t3', { opacity: 1 }, 11.4);
+  tl.set('#t3', { opacity: 0 }, 13.2); tl.set('#t4', { opacity: 1 }, 13.2);
+  tl.set('#sec1', { className: 'sec lit' }, 9.5);
+  tl.set('#sec2', { className: 'sec lit' }, 11.2);
+  tl.set('#sec3', { className: 'sec lit' }, 12.9);
+  tl.to(progState, { p: 1, duration: 5.3, ease: 'none', onUpdate: paintTrack }, 8.5);
+  tl.to(eqState, { t: 10, duration: 6, ease: 'none', onUpdate: function () {} }, 8);
+  tl.set('#s3', { opacity: 0 }, 14);
+  // S4 14-17.5 (hamilton words at clip+2.29/2.83/3.01 -> 16.09/16.63/16.81)
+  tl.set('#s4', { opacity: 1 }, 14);
+  tl.set('#k1', { className: 'w on' }, 16.09);
+  tl.set('#k2', { className: 'w on' }, 16.63);
+  tl.set('#k3', { className: 'w on' }, 16.81);
+  tl.to(eqState, { t: 20, duration: 3.5, ease: 'none', onUpdate: paintEq }, 14);
+  tl.set('#s4', { opacity: 0 }, 17.5);
+  // S5 17.5-20 (beat-locked: 18.55)
+  tl.set('#s5', { opacity: 1 }, 17.5);
+  tl.fromTo('#checker', { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: 'power3.out' }, 17.6);
+  tl.fromTo('#p1', { scale: 1.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: 'power4.in' }, 18.55);
+  tl.fromTo('#p1url', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4 }, 19.0);
+  tl.set({}, {}, 20);
+  paintTrack();
+  window.__timelines['main'] = tl;
+  tl.seek(0);
+})();
+</script>
+</body>
+</html>
